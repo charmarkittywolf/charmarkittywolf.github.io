@@ -67,6 +67,8 @@ li{
 .link-title{
     font-family:"Jura";
     font-weight:bold;
+    margin-left:10px;
+    margin-right:10px;
 }
 .link-description{
     font-weight: normal;

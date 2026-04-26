@@ -1,0 +1,246 @@
+
+
+@font-face{
+    font-family: "SisterSpray";
+    src: url("../assets/SisterSpray.ttf");
+}
+
+:root{
+    --Charlotte-Marie: rgb(255, 137, 58);
+    --VioletKittyWolf: rgb(202, 118, 228);
+    --Color: #ff0030f7;
+    interpolate-size: allow-keywords;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: default;
+}
+
+html{
+    height: 100%;
+    width: 100%;
+}
+
+menu{
+    list-style-type: none;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction:column;
+
+    background-color: black;
+    color: white;
+
+    overflow: hidden;
+}
+
+
+#welcome-message{
+    font-family: SisterSpray;
+    color: var(--Color);
+    text-shadow: 0px 0px 100px white;
+    border-bottom: solid;
+    margin-bottom: 5px;
+    padding-bottom: 15px;
+    text-align:center;
+    animation:rainbow 8s linear infinite;
+}
+
+li{
+    padding-top:10px;
+}
+
+#options{
+    font-size:16px;
+    text-align:center;
+}
+
+.link-title{
+    font-family:"Jura";
+    font-weight:bold;
+}
+.link-description{
+    font-weight: normal;
+}
+
+#quick-nav{
+    text-align: center;
+    display:flex;
+    flex-direction:row;
+    justify-content: center;;
+    width:500px;
+    padding-bottom:10px;
+    font-family:"Jura";
+    max-width:-webkit-fill-available;
+    max-width: -moz-available;
+    padding-top:15px;
+}
+.quick-nav-button{
+    text-align:center;
+    width: -moz-available;
+    width: -webkit-fill-available;
+}
+
+#silly-quote{
+    text-align:center;
+    border-bottom: solid;
+    animation:rainbow 8s linear infinite;
+    padding-bottom: 5px;
+    font-family: "architects daughter";
+    user-select: none; 
+}
+#silly-quote:hover{
+    cursor:pointer;
+}
+
+.widthless-character{
+    width: 0px;
+    display: inline-block;
+}
+
+#rl{
+    margin:-5px;
+}
+
+a:link {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:hover{
+    cursor:pointer;
+}
+
+a:visited {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+#music-popup{
+    position: absolute;
+    top: 0;
+    background-color: darkmagenta;
+    padding: 5px;
+    border: solid 1px;
+    border-radius: 5px;
+    font-family: "Jura";
+    font-size: 15px;
+    margin-top: 10px;
+    transition: 1000ms;
+    transform: translateY(-100px);
+    text-align:center;
+}
+
+#play-music{
+    padding-top:5px;
+    font-family:Jura;
+    position:absolute;
+    bottom:30px;
+    text-align:center;
+}
+#play-music:hover{
+    cursor:pointer;
+    color:aqua;
+}
+
+#music-settings{
+    padding-top:5px;
+    font-family:Jura;
+    position:absolute;
+    bottom:10px;
+    text-align:center;
+}
+#music-settings:hover{
+    cursor:pointer;
+    color:aqua;
+}
+
+
+#splash-page{
+    padding-top:5px;
+    font-family:Jura;
+    position:absolute;
+    bottom:10px;
+}
+
+#splash-page:hover{
+    cursor:pointer;
+    color:aqua;
+}
+
+a#splash-page:link{
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.fa-check{
+    color:green;
+}
+
+.fa-exclamation{
+    color:yellow;
+}
+.fa-question{
+    color:yellow;
+}
+
+.fa-x{
+    color: red;
+}
+
+.the-steves{
+    padding-left: 2px;
+    padding-right: 2px;
+    font-family: 'Goldman';
+    text-shadow: -1px 0 red, 0 1px red, 1px 0 red, 0 -1px red;
+}
+.the-steves:hover{
+    cursor:pointer;
+}
+
+@keyframes rainbow {
+    0%{
+        color: rgba(255, 0, 0, 1);
+    }
+    10%{
+        color: rgba(255, 154, 0, 1);
+    }
+    20%{
+        color: rgba(203, 222, 33, 1);
+    }
+    30%{
+        color: rgba(79, 220, 74, 1);
+    }
+    40%{
+        color: rgba(63, 218, 216, 1);   
+    }
+    50%{
+        color: rgba(47, 201, 226, 1);
+    }
+    60%{
+        color: rgba(28, 127, 238, 1);
+    }
+    70%{
+        color: rgba(95, 21, 242, 1);
+    }
+    80%{
+        color: rgba(186, 12, 248, 1);
+    }
+    90%{
+        color: rgba(251, 7, 217, 1);
+    }
+    100%{
+        color: rgba(255, 0, 0, 1);
+    }
+}

@@ -1,0 +1,54 @@
+#contact-form{
+    display:flex;
+    flex-direction:column;
+    padding:15px;
+    border:4px solid var(--Color);
+    
+}
+
+#contact-me-title{
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#message-content{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#message-content:hover{
+    cursor:text;
+}
+
+#name-email-row{
+    display:flex;
+}
+
+#contact-name{
+    margin-right: 10px;
+}
+#contact-name:hover{
+    cursor:text;
+}
+
+#contact-email{
+    cursor:text;
+}
+
+button:hover{
+    cursor:pointer;
+}
+
+button{
+    font-family:Orbitron;
+    background-color:var(--Color);
+    padding:3px;
+}
+
+input, textarea{
+    font-family: Jura;
+    padding:5px;
+}

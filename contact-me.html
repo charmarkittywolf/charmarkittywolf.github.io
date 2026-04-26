@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Mobile Formatting -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Icon -->
+        <link rel="icon" href="assets/Icon.ico">
+        <!-- Title -->
+        <title>Contact Me</title>
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+        <!-- Fonts -->
+        <link rel="preload" href="assets/Star.ttf" as="font" type="font/ttf" crossorigin>
+        <link rel="preload" href="assets/RoyalFlush.ttf" as="font" type="font/ttf" crossorigin>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&family=Ephesis&family=Oregano:ital@0;1&Caudex:ital,wght@0,400;0,700;1,400;1,700&family=Architects+Daughter&family=Dancing+Script:wght@400..700&family=Indie+Flower&family=Orbitron:wght@400..900&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Hachi+Maru+Pop&display=swap" rel="stylesheet">
+        <!-- JQUERY -->
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+        <!-- Scripts -->
+        <script src="scripts/music.js"></script>
+        <script defer src="scripts/contact-me.js"></script>
+        <!-- Styles -->
+        <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/contact-me.css">
+    </head>
+    <body>
+        <div id="contact-me-title">
+            <h1 class="myFont">Send a message to </h1>
+            <h1 class="myName">Me</h1>
+        </div>
+        <form id="contact-form" target="_blank" action="https://formsubmit.co/melody.m.moseley@gmail.com" method="POST">
+            <div id="name-email-row">
+                <input id="contact-name" type="text" name="name" class="form-control" placeholder="Name (Not Required)">
+                <input id="contact-email" type="email" name="email" class="form-control" placeholder="Email (Not Required)">
+            </div>
+            <textarea id="message-content" placeholder="Your Message" class="form-control" name="message" rows="10" required></textarea>
+            <button type="submit" class="btn btn-lg btn-dark btn-block">Submit Form</button>
+        </form>
+        <a id="splash-page" href="index.html">Return to Splash Page</a>
+    </body>
+    <audio id="song">
+        <source src="music/ASimpleMelody.mp3" type="audio/ogg">
+    </audio>
+</html>

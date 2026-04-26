@@ -57,6 +57,8 @@ body{
 
 li{
     padding-top:10px;
+    padding-left:20px;
+    padding-right:20px;
 }
 
 #options{
@@ -71,8 +73,6 @@ li{
 .link-title{
     font-family:"Jura";
     font-weight:bold;
-    margin-left:20px;
-    margin-right:20px;
 }
 .link-description{
     font-weight: normal;
@@ -83,7 +83,6 @@ li{
     display:flex;
     flex-direction:row;
     justify-content: center;;
-    width:500px;
     padding-bottom:10px;
     font-family:"Jura";
     max-width:-webkit-fill-available;

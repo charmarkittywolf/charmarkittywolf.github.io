@@ -64,11 +64,15 @@ li{
     text-align:center;
 }
 
+.name-piece{
+    height:94px;
+}
+
 .link-title{
     font-family:"Jura";
     font-weight:bold;
-    margin-left:10px;
-    margin-right:10px;
+    margin-left:20px;
+    margin-right:20px;
 }
 .link-description{
     font-weight: normal;

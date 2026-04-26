@@ -47,7 +47,7 @@ const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/
 if (isMobile) {
     $("#title-text").css("width","100%")
     $("#title-section").css("width","100%")
-    $("#welcome-message").html("<p>CHAR<span id='rl' class='widthless-character'>_</span>LOTTE</p><p>MA<span class='widthless-character'>=</span>RIE</p>")
+    $("#welcome-message").html("<p class='name-piece'>CHAR<span id='rl' class='widthless-character'>_</span>LOTTE</p><p class='name-piece'>MA<span class='widthless-character'>=</span>RIE</p>")
 }
 
 setInterval(function(){

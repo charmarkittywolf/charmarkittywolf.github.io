@@ -4,7 +4,7 @@ let sillyQuotes = [
     "Fiction can change the world!",
     "It is ignorance and hope that warms the heart.",
     "TORCHY'S TACOS?!",
-    "Additional Aliases: Melody, Mikey, Butterfly Mcgiggles, Phoenix Steve",
+    "The Artist Formerly Known as Phoenix Steve",
     "Everything ends, but I've got 60% left.",
     "Battle Damaged Purgatory Hell-World Princess",
     "I feed upon the unwavering spirit and forge my way through the dark journey!",

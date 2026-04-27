@@ -8,7 +8,7 @@
 :root{
     --Charlotte-Marie: rgb(255, 137, 58);
     --VioletKittyWolf: rgb(202, 118, 228);
-    --Color: #ff0030f7;
+    --Color: rgba(255, 154, 0, 1);
     interpolate-size: allow-keywords;
 }
 

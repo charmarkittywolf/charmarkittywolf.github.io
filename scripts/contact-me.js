@@ -1,7 +1,3 @@
-changeColor = function(){
-    
-}
-
 
 customPlaySong = async function(){
     song = document.getElementById("song");
@@ -11,7 +7,7 @@ customPlaySong = async function(){
     }
     song.play().then(() => {
         changeColor();
-        nameChange = setInterval(changeColor, 1500)
+        colorChange = setInterval(changeColor, 1500)
         console.log("Playback started successfully!");
     })
     .catch((error) => {
@@ -20,7 +16,7 @@ customPlaySong = async function(){
         setTimeout(animateMusicPopup,100);
         $('body').on("click", function(){
             changeColor();
-            nameChange = setInterval(changeColor, 1500)
+            colorChange = setInterval(changeColor, 1500)
             $("#music-popup").css("transform","translateY(-100px)")
             setTimeout($("#music-popup").remove,1000);
             song.play();
@@ -30,11 +26,11 @@ customPlaySong = async function(){
 }
 customPlaySong();
 song.addEventListener("ended", function(){
-    clearInterval(nameChange);
+    clearInterval(colorChange);
     song.currentTime = 0;
     song.play().then(() => {
         changeColor()
-        nameChange = setInterval(changeColor, 1500)
+        colorChange = setInterval(changeColor, 1500)
         console.log("Playback started successfully!");
     })
     console.log("ended");

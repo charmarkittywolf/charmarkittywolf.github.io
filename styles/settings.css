@@ -1,0 +1,74 @@
+body{
+    -webkit-user-select: none;
+}
+
+#settings{
+    font-family:"Orbitron";
+    text-align:center
+}
+
+.slider-form, #testSound{
+    margin-bottom:5px;
+}
+
+#return{
+    text-align:center;
+}
+
+#testSound:hover{
+    cursor:pointer;
+}
+
+#song-details{
+    font-family: Architects Daughter;
+    position: absolute;
+    transform: translateY(175px);
+    width: 500px;
+    padding:10px;
+    border:solid;
+    border-radius: 15px;
+    border-color: var(--Color);
+    box-shadow: 0px 0px 5px white;
+}
+
+#hey-count{
+    transform: translateY(285px);
+    font-family:Orbitron;
+    color:var(--Color);
+    text-align:center;
+    position:absolute;
+}
+
+.slider-form{
+    color: var(--Color);
+}
+
+.rainbow-circle{
+  width: 0px;
+  height: 0px;
+  cursor: pointer;
+  position: relative;
+}
+
+@keyframes radiate {
+  to {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
+
+@keyframes dance {
+    to{
+        transform:rotate(360deg)
+    }
+}
+
+.dancing{
+    animation: dance linear 500ms;
+}
+
+#Hey{
+    text-align:center;
+    font-size:50px;
+    font-family:Orbitron;
+}

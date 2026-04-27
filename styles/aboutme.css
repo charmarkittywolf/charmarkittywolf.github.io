@@ -1,0 +1,146 @@
+#background{
+    background-image: url(../images/TransStars.png);
+    animation: spin 500s linear infinite;
+    height: 1000%;
+    width: 1000%;
+    position: absolute;
+    z-index: -2;
+}
+
+#background-2{
+    background-image: url(../images/TransStars.png);
+    animation: spin 500s reverse linear infinite;
+    height: 1000%;
+    width: 1000%;
+    position: absolute;
+    z-index: -2;
+}
+
+@keyframes spin {
+    from{
+        transform: rotate(0deg);
+        transform: rotateZ(0deg)
+    }
+    to{
+        transform: rotate(360deg);
+        transform: rotateZ(360deg);
+    }
+}
+
+#star{
+    z-index:0;
+    position:fixed;
+    right:200px;
+    background-color:white;
+    width: 2px;
+    height: 2px;
+    animation: twinkle linear 3s infinite;
+    transform:scale(3);
+    box-shadow: 0px 0px 5px 2px darkmagenta;
+    top:100px;
+}
+#star:hover{
+    cursor:pointer;
+}
+
+@keyframes twinkle {
+    0% { 
+        transform: rotateY(0deg);
+        transform:scale(1)
+    }50%{
+        transform:rotateY(180deg);
+        transform:scale(2)
+    }100% { 
+        transform:scale(1);
+        transform: rotateY(0deg);  
+    }    
+}
+
+#background-3{
+    /* background: radial-gradient(circle,rgba(207, 29, 192, .5) 0%, rgba(255, 255, 255, 0) 50%); */
+    background: radial-gradient(circle,rgba(0,0,0,50%)0%, rgb(0, 0, 0)50%);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index:-3;
+}
+body{
+    animation: rainbow 10s linear infinite;
+    position:fixed;
+}
+
+@keyframes rainbow {
+    0%{
+        background-color: rgba(255, 0, 0, 1);
+    }
+    10%{
+        background-color: rgba(255, 154, 0, 1);
+    }
+    20%{
+        background-color: rgba(203, 222, 33, 1);
+    }
+    30%{
+        background-color: rgba(79, 220, 74, 1);
+    }
+    40%{
+        background-color: rgba(63, 218, 216, 1);   
+    }
+    50%{
+        background-color: rgba(47, 201, 226, 1);
+    }
+    60%{
+        background-color: rgba(28, 127, 238, 1);
+    }
+    70%{
+        background-color: rgba(95, 21, 242, 1);
+    }
+    80%{
+        background-color: rgba(186, 12, 248, 1);
+    }
+    90%{
+        background-color: rgba(251, 7, 217, 1);
+    }
+    100%{
+        background-color: rgba(255, 0, 0, 1);
+    }
+}
+
+.section{
+    width:33%;
+    text-align: center;
+}
+.title{
+    font-family:"Orbitron";
+}
+.title:hover{
+    cursor: pointer;
+}
+
+.content{
+    font-family: "Jura";
+    transition: 500ms linear;
+    overflow:hidden;
+    height:0;
+}
+
+.content-expand{
+    height:auto;
+}
+
+.content > p{
+    padding:5px;
+}
+
+#message-link{
+    color:aqua
+}
+#message-link:hover{
+    cursor:pointer;
+}
+
+.myName{
+    font-size: 20px;
+    height: 35px;
+    display: block;
+    padding: 5px;
+}

@@ -211,7 +211,6 @@ a:hover{
     margin-left: 25px;
     margin-right: 25px;
     margin-bottom:50px;
-    margin-right: 10px;
 }
 
 #completed-tasks-title{
@@ -233,4 +232,6 @@ a:hover{
 #completed-tasks-container{
     display:flex;
     flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: center;
 }

@@ -16,3 +16,14 @@ $(".picture").on("mouseleave",function(){
     $(this).css("transform",$(this).css("transform").replace("scale(2)","") + "scale(.5)")
     $(this).css("z-index",0);
 })
+
+const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+
+if (isMobile) {
+    $("img").css("width","-webkit-fill-available")
+    $(".picture").css("width","-webkit-fill-available")
+    $(".picture-box").css("width","-webkit-fill-available")
+    $("#entry").css("width","90%");
+    $("body").css("width","100%");
+    $("body").css("height","auto");
+}

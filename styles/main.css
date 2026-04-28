@@ -4,6 +4,10 @@
     font-family: "SisterSpray";
     src: url("../assets/SisterSpray.ttf");
 }
+@font-face{
+    font-family: "GGSans";
+    src: url("../assets/ggsans.woff2");
+}
 
 :root{
     --Charlotte-Marie: rgb(255, 137, 58);

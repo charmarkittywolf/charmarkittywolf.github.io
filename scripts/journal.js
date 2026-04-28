@@ -1,0 +1,18 @@
+let rotatePictures = function(){
+    let pictures = $(".picture")
+    for(let x=0; x<pictures.length; x++){
+        let random = (Math.floor(Math.random() * 6)) -3
+        console.log(random);
+        $(pictures[x]).css("transform",`rotate(${random}deg)`)
+    }
+}
+rotatePictures();
+
+$(".picture").on("mouseenter",function(){
+    $(this).css("transform",$(this).css("transform").replace("scale(1)","") + "scale(2)")
+    $(this).css("z-index",1);
+})
+$(".picture").on("mouseleave",function(){
+    $(this).css("transform",$(this).css("transform").replace("scale(2)","") + "scale(.5)")
+    $(this).css("z-index",0);
+})

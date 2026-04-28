@@ -26,4 +26,6 @@ if (isMobile) {
     $("#entry").css("width","90%");
     $("body").css("width","100%");
     $("body").css("height","auto");
+    $(".flex-row").css("flex-direction","column");
+    $(".picture-box-caption").css("width","auto");
 }

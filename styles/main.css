@@ -8,7 +8,10 @@
     font-family: "GGSans";
     src: url("../assets/ggsans.woff2");
 }
-
+@font-face{
+    font-family:"Proxima Nova";
+    src: url("../assets/ProximaNova.ttf");
+}
 :root{
     --Charlotte-Marie: rgb(255, 137, 58);
     --VioletKittyWolf: rgb(202, 118, 228);

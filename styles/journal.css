@@ -222,6 +222,6 @@ nav > span:hover{
 .table-section > p{
     text-align:center;
 }
-.table-section > p:hover{
+a:hover{
     cursor:pointer;
 }

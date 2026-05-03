@@ -54,7 +54,7 @@ img{
     margin-bottom:20px;
 }
 
-#entry{
+#entry, #table-of-contents{
     display:flex;
     flex-direction:column;
     padding:10px;
@@ -74,12 +74,12 @@ img{
     font-family:Kalam;
     padding:15px;
     padding-bottom:0px;
-    text-decoration: underline cadetblue 2px;
+    text-decoration: underline black 2px;
     text-underline-offset: 5px;
     text-decoration-style: double;
 }
 
-#entry > p{
+#entry > p, #entry > ol{
 /*     text-decoration: underline cadetblue;
     text-underline-offset: 5px;
     line-height: 25px; */
@@ -87,6 +87,24 @@ img{
     padding-top: 7.5px;
     padding-bottom: 7.5px;
 
+}
+
+li{
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 20px;
+    margin-left: 40px;
+}
+
+#entry > ol{
+    padding-left:0px;
+    padding-right:0px;
+    margin-left:40px;
+}
+
+li > p {
+    padding-top:7.5px;
+    padding-bottom:7.5px;
 }
 
 a:link {
@@ -173,5 +191,37 @@ a:hover{
 }
 
 #main-task-bonus{
-    width:auto;
+    width: -webkit-fill-available;
+    margin-left: 5px;
+}
+
+nav{
+    background-color:cornsilk;
+    padding:5px;
+    margin-bottom: 20px;
+    border: solid;
+    font-family: Jura;
+}
+
+nav > span:hover{
+    cursor:pointer;
+}
+
+#return-to-contents{
+    padding:20px;
+}
+
+.table-category{
+    text-align:center;
+}
+
+#journal-title{
+    text-align:center;
+}
+
+.table-section > p{
+    text-align:center;
+}
+.table-section > p:hover{
+    cursor:pointer;
 }

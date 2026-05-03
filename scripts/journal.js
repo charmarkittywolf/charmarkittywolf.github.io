@@ -46,3 +46,25 @@ if (isMobile) {
     $(".picture").off("mouseleave")
     mobileClick();
 }
+
+$("#prev").on("click",function(){
+    let pageNum = window.location.href.substring(window.location.href.length-7,window.location.href.length-5)
+    if(pageNum.substring(0,1)=='/'){
+        pageNum = pageNum.substring(1)
+    }
+    pageNum = parseInt(pageNum)-1;
+    window.location.href = pageNum + ".html";
+})
+
+$("#next").on("click",function(){
+    let pageNum = window.location.href.substring(window.location.href.length-7,window.location.href.length-5)
+    if(pageNum.substring(0,1)=='/'){
+        pageNum = pageNum.substring(1)
+    }
+    pageNum = parseInt(pageNum)+1;
+    window.location.href = pageNum + ".html";
+})
+
+$("#return-to-contents").on("click",function(){
+    window.location.href = "../table-of-contents.html";
+})

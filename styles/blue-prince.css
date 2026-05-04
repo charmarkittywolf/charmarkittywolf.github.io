@@ -1,0 +1,17 @@
+img{
+    aspect-ratio: auto;
+}
+
+.picture-box{
+    width:calc(100% - 80px);
+}
+
+.fixed-ratio{
+    aspect-ratio:1;
+}
+
+figure > p{
+    font-size: 14px;
+    font-family: 'Indie Flower';
+    font-weight: bold;
+}

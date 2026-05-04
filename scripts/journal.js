@@ -45,6 +45,9 @@ if (isMobile) {
     $(".picture").off("mouseenter");
     $(".picture").off("mouseleave")
     mobileClick();
+    $(".picture-box").css("width","inherit")
+    $("img").css("aspect-ratio","1")
+    $(".flex-row").css("width","inherit");
 }
 
 $("#prev").on("click",function(){

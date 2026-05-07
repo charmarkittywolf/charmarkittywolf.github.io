@@ -1,0 +1,96 @@
+{
+    "1-46": [
+        {
+            "name": "Entrance Hall",
+            "description": "Past the steps and beyond the grand doors, admission to Mount Holly is granted by way of a dark and garish lobby, suitably called the Entrance Hall. From here, each guest's adventure begins; however, the three doors that proceed onward do not always lead to the same adjoining rooms...",
+            "type": ["Permanent","Blueprint"],
+            "rarity": "n/a",
+            "chess":"n/a",
+            "notes":[
+                "Rules for how footsteps work are found on the side table. (Though I think it gets replaced with the trophy list later?)",
+                "The letter regarding inheritance is found in this room.",
+                "There are two statues in this room. I'll have to update with who of once I find the Foyer.",
+                "A painting of Trinsdale Lake is in this room."
+            ]
+        },
+        {
+            "name": "Storeroom",
+            "effect": "+1 🗝️, 1 💎, 1 🪙",
+            "description": "A dedicated storage space filled from end to end with a surplus of chairs, carpets, paintings, and a handful of other things that had at one time been in vogue and on display elsewhere in the house.",
+            "type": ["Blueprint", "Dead End"],
+            "rarity": "Commonplace",
+            "chess": {"type":"pawn","color":"white"},
+            "notes":[
+                "There is a building in here.",
+                "There is a black vase in here.",
+                "There is a globe in here."
+            ]
+        }
+    ],
+    "Bedrooms": [
+        
+    ],
+    "Hallways": [
+        {
+            "name": "Hallway",
+            "description": "One of the many nondescript hallways snaking through the estate and providing elegant causeways between the more noteworthy destinations that the house has to offer.",
+            "type": ["Hallway"],
+            "rarity": "Commonplace",
+            "chess":"n/a",
+            "notes":[
+                "There is a conspicuous vase of red flowers on a pedastal",
+                "There is a false red note regarding locked rooms here."
+            ]
+        }
+    ],
+    "Red Rooms": [
+        {
+            "name": "Chapel",
+            "effect": "Whenever you enter Chapel, lose 1 🪙.",
+            "description": "A private sacristy, as ornate as the most lavish rooms of the estate, is watched over by eight Ajeran Angels depicted in stained glass. This room was more a tribute to your uncle's vanity than it was to his faith.",
+            "type": ["Entry", "Red Room"],
+            "rarity": "Commonplace",
+            "chess": {"type":"bishop","color":"white"},
+            "notes":[
+                "There are ruby candles here!",
+                "There is a missing candle on one of the candelabras here.",
+                "There are four statues of unknown figures here.",
+                "There are stained glass depictions of all of the Ajrean Angels here. They are used in the Tomb to unlock access to the underground."
+            ]
+        }
+    ],
+    "The Grounds": [
+        {
+            "name": "The Grounds",
+            "notes": [
+                "There is a birdbath near the four flames."
+            ]
+        },
+        {
+            "name": "Private Drive",
+            "notes": [
+                "There is a birdbath near the gate.",
+                "There is a birdbath near the campsite."
+            ]
+        },
+        {
+            "name": "Apple Orchard",
+            "effect": "Start each day with an extra 20 👣.",
+            "notes": [
+                "There's a birdbath here.",
+                "There's a sundial here.",
+                "You can toggle one of the four gas flames here.",
+                "The Groundskeeper's Log is found here.",
+                "A gemless gem holder is found in the groundskeeper's shed for some reason. ...strange.",
+                "The pots here are also broken for some reason."
+            ]
+        },
+        {
+            "name": "Campsite",
+            "effect": "You may Call It A Day at anytime.",
+            "notes": [
+                "There's something diggable between the two rocks behind the campsite. ...I dont' remember what clues tell you this though."
+            ]
+        }
+    ]
+}

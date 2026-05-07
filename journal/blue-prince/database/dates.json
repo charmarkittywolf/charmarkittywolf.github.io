@@ -1,0 +1,23 @@
+[
+    {
+        "date": "November 28th, Unknown Year",
+        "location": "Dark Room",
+        "notes": [
+            "It's found on a photograph of the Apple Orchard. It's the code to the gate."
+        ]
+    },
+    {
+        "date": "April 10th, 1992",
+        "location": "Apple Orchard",
+        "notes": [
+            "The day the new groundskeeper started their log."
+        ]
+    },
+    {
+        "date": "March 18th, 1993",
+        "location": "Initial Cutscene",
+        "notes": [
+            "The day Herbert Sinclair signed his will."
+        ]
+    }
+]

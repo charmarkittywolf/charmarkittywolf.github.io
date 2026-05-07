@@ -17,6 +17,27 @@
             ]
         },
         {
+            "name": "Spare Room",
+            "description": "An unfurnished, unfinished and otherwise unremarkable empty room. If there had at some point been plans for this spare room, it would seem those designs are now long forgotten.",
+            "type":["Blueprint"],
+            "rarity": "Commonplace",
+            "chess": "n/a",
+            "notes":[
+
+            ]
+        },
+        {
+            "name": "Parlor",
+            "effect": "🧩",
+            "description": "This cozy lounge furnished with couches and armchairs serves as the perfect social setting for receptions and after parties. Consequently this was one of the most popular rooms for entertaining and the late H. S. Sinclair was known to supply a myriad of parlor games to encourage his guests to think and conversate.",
+            "type": ["Puzzle", "Blueprint"],
+            "rarity": "Commonplace",
+            "chess": {"type":"pawn","color":"black"},
+            "notes":[
+                "There is a letter from M. Lowry regarding the parlor game, along with instructions for the game in this room."
+            ]
+        },
+        {
             "name": "Closet",
             "effect": "2 items",
             "description": "A very modest recessed space used for storage. This particular closet is favored by the junior members of the staff, who utilize it to stash away assorted articles and knicknacks whose proper place in the estate is yet unknown to them.",
@@ -55,10 +76,47 @@
                 "There are instructions for taking notes. It includes a lowercase 'beside' which is used as part of a complex clue which leads you to finding one of the missing microchips for the Blackbridge Grotto.",
                 "The notes note also has a picture of a journal, which when magnified teaches you how to play the dartboard game and a few other basic clues. I don't have a saved image of the magnified journal though."
             ]
+        },
+        {
+            "name": "Garage",
+            "effect": "+3 🗝️",
+            "description": "Entering and exiting out through the west facing private drive, the Garage serves as a more practical and informal entrance point into the estate.",
+            "cost": "💎",
+            "type": ["Blueprint", "Dead End"],
+            "rarity": "Unusual",
+            "chess": "n/a",
+            "notes":[
+                "You unlock the west path by powering the garage door.",
+                "There is a conspicuous box in this room. May be uninteractable though.",
+                "There is a note to the driver regarding susipcious absences."
+            ]
+        },
+        {
+            "name": "Utility Closet",
+            "effect": "⚙️ Breaker Box",
+            "description": "One benefit of the restoration of old buildings is that it allows the owners to update and add modern amenities. The utility closet and the circuit breaker box within were set up when gas powered lighting was retired and replaced by a more fashionable home electrical system.",
+            "type":["⚙️ Mechanical", "Blueprint", "Dead End"],
+            "rarity": "Standard",
+            "chess": "n/a",
+            "notes":[
+                "You unlock the Gemstone cavern here by inputting the right V.A.C code. Instructions for the code are found in the emails only accessible from the Office.",
+                "There is a removed and scratched out switch for 'Cabinet'"
+            ]
         }
     ],
     "Bedrooms": [
-        
+        {
+            "name": "Guest Bedroom",
+            "effect": "+10 👣",
+            "description": "A small bedroom maintaned and kept available for accommodating weekend guests and impromptu visitors who find themselves compelled to stay the night.",
+            "type":["Bedroom","Dead End"],
+            "rarity": "Commonplace",
+            "chess": {"type":"pawn","color":"white"},
+            "notes": [
+                "The room is nautically themed and contains a sailboat, whale, anchor, and ship-wheel.",
+                "A letter from 'KL' can be found here regarding the billiard room. Lord Evanson is mentioned in this letter."
+            ]
+        }
     ],
     "Hallways": [
         {
@@ -71,9 +129,43 @@
                 "There is a conspicuous vase of red flowers on a pedastal",
                 "There is a false red note regarding locked rooms here."
             ]
+        },
+        {
+            "name": "West Wing Hall",
+            "description": "The west wing of the estate has been closed since the death of Lady Epsen. It is unsurprising therefore, that this hallway in its neglected state features boarded windows and dust smothered furniture.",
+            "type":["Hallway"],
+            "rarity": "Standard",
+            "chess":"n/a",
+            "notes":[
+                "There is a torn note regarding the closing of the West Wing. It has a date on it.",
+                "There is a black vase in this room."
+            ]
+        }
+    ],
+    "Green Rooms": [
+        {
+            "name": "Courtyard",
+            "description": "A charming spot granting guests a bit of fresh air and open skies within the privacy of the manor walls.",
+            "cost": "💎",
+            "type": ["Green Room"],
+            "rarity": "Standard",
+            "chess": "n/a",
+            "notes": [
+
+            ]
         }
     ],
     "Red Rooms": [
+        {
+            "name": "Lavatory",
+            "description": "A room one might go to great lengths to avoid showing guests despite them <i>always</i> probing for its location.",
+            "type": ["Red Room","Dead End"],
+            "rarity": "Standard",
+            "chess": "n/a",
+            "notes":[
+                "You can use the sink to refill the watering can."
+            ]
+        },
         {
             "name": "Chapel",
             "effect": "Whenever you enter Chapel, lose 1 🪙.",
@@ -87,6 +179,21 @@
                 "There are four statues of unknown figures here.",
                 "There are stained glass depictions of all of the Ajrean Angels here. They are used in the Tomb to unlock access to the underground.",
                 "The description says eight, but there are only seven angels? I think lighting the torches might reveal the eighth."
+            ]
+        }
+    ],
+    "Outer Rooms": [
+        {
+            "name": "Schoolhouse",
+            "effect": "📐 Adds 8 Classrooms to today's Draft Pool.",
+            "description": "Long before Reddington Elementary was opened, school convened in a single small building. As the student body grew over the years, the need for separate classrooms for each grade arose and the Mt. Holly Schoolhouse was officially closed down.",
+            "type": ["📐 Drafting", "Blueprint", "Dead End", "Outer Room"],
+            "rarity": "Unusual",
+            "chess": "n/a",
+            "notes":[
+                "There is a desk with 'Herbie' scratched into it.",
+                "'within a timely manor' is written on the chalk board.",
+                "There is a closing adress written on the desk"
             ]
         }
     ],
@@ -121,6 +228,13 @@
             "effect": "You may Call It A Day at anytime.",
             "notes": [
                 "There's something diggable between the two rocks behind the campsite. ...I dont' remember what clues tell you this though."
+            ]
+        },
+        {
+            "name": "West Path",
+            "notes":[
+                "There's a birdbath here near the garage.",
+                "There's a birdbath here near the Outer Room."
             ]
         }
     ]

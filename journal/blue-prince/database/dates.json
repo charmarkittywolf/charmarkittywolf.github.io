@@ -19,5 +19,19 @@
         "notes": [
             "The day Herbert Sinclair signed his will."
         ]
+    },
+    {
+        "date": "May 2nd, Unknown Year",
+        "location": "Parlor",
+        "notes": [
+            "Letter from M. Lowry to Herbert Sinclair regarding the Parlor Game."
+        ]
+    },
+    {
+        "date": "June 15th, 1983",
+        "location": "West Wing Hallway",
+        "notes":[
+            "The day the West Wing was closed due to Lady Epsen's death."
+        ]
     }
 ]

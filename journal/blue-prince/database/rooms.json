@@ -10,7 +10,22 @@
                 "Rules for how footsteps work are found on the side table. (Though I think it gets replaced with the trophy list later?)",
                 "The letter regarding inheritance is found in this room.",
                 "There are two statues in this room. I'll have to update with who of once I find the Foyer.",
-                "A painting of Trinsdale Lake is in this room."
+                "A painting of Trinsdale Lake is in this room.",
+                "There are three bird figures here.",
+                "There are two canes here.",
+                "There is a coatstand here."
+            ]
+        },
+        {
+            "name": "Closet",
+            "effect": "2 items",
+            "description": "A very modest recessed space used for storage. This particular closet is favored by the junior members of the staff, who utilize it to stash away assorted articles and knicknacks whose proper place in the estate is yet unknown to them.",
+            "type:": ["Blueprint","Dead End"],
+            "rarity": "Commonplace",
+            "chess": "n/a",
+            "notes": [
+                "There is an umbrella here.",
+                "There is a hat here."
             ]
         },
         {
@@ -24,6 +39,21 @@
                 "There is a building in here.",
                 "There is a black vase in here.",
                 "There is a globe in here."
+            ]
+        },
+        {
+            "name": "Nook",
+            "effect": "+1 🗝️",
+            "description": "A sung corner reading room which serves as a quiet, private place for guests to spend a few hoursof their afternoon away from the hustle and bustle of the staff.",
+            "type": ["Blueprint"],
+            "rarity": "Commonplace",
+            "chess": {"type":"rook","color":"white"},
+            "notes":[
+                "There is a shelf in the shape of the symbol of either Reddington or Mt. Holly not sure which yet that has colored artifacts on it.",
+                "There is a coat stand here.",
+                "There is what I believe to be a jukebox here.",
+                "There are instructions for taking notes. It includes a lowercase 'beside' which is used as part of a complex clue which leads you to finding one of the missing microchips for the Blackbridge Grotto.",
+                "The notes note also has a picture of a journal, which when magnified teaches you how to play the dartboard game and a few other basic clues. I don't have a saved image of the magnified journal though."
             ]
         }
     ],
@@ -55,7 +85,8 @@
                 "There are ruby candles here!",
                 "There is a missing candle on one of the candelabras here.",
                 "There are four statues of unknown figures here.",
-                "There are stained glass depictions of all of the Ajrean Angels here. They are used in the Tomb to unlock access to the underground."
+                "There are stained glass depictions of all of the Ajrean Angels here. They are used in the Tomb to unlock access to the underground.",
+                "The description says eight, but there are only seven angels? I think lighting the torches might reveal the eighth."
             ]
         }
     ],

@@ -38,6 +38,17 @@
             ]
         },
         {
+            "name": "Billiard Room",
+            "effect": "🧩",
+            "description": "This smoky backroom, featuring a pool table and fully stocked bar, has served as a retreat on more than one occasion for guests lacking the social wit required for after-dinner conversation. A rather curious game of darts provided the less competitive players a unique opportunity to ponder over its unusual rules.",
+            "type":["Puzzle","Blueprint"],
+            "rarity":"Commonplace",
+            "chess":"n/a",
+            "notes":[
+
+            ]
+        },
+        {
             "name": "Closet",
             "effect": "2 items",
             "description": "A very modest recessed space used for storage. This particular closet is favored by the junior members of the staff, who utilize it to stash away assorted articles and knicknacks whose proper place in the estate is yet unknown to them.",
@@ -47,6 +58,32 @@
             "notes": [
                 "There is an umbrella here.",
                 "There is a hat here."
+            ]
+        },
+        {
+            "name": "Walk-In Closet",
+            "effect": "4 items",
+            "description": "The stylish and smart clothes in this generously sized closet belong to the former Mistress of the estate, Lady Epsen. Though the small dressing room has not been used in many years, it is nevertheless kept up and preserved in the state you now find it.",
+            "cost":"💎",
+            "type":["Blueprint","Dead End"],
+            "rarity": "Standard",
+            "chess": "n/a",
+            "notes": [
+                "There is a photo of Lady Epsen here.",
+                "There are three hats here."
+            ]
+        },
+        {
+            "name": "Attic",
+            "effect": "8 items",
+            "description": "High above the mansion in its lofty perch, Mt. Holly's Attic provides curious explorers with a cache of dusty keepsakes, trinkets, and clues from a long-forgotten past.",
+            "cost":"💎💎💎",
+            "type":["Blueprint","Dead End"],
+            "rarity":"Rare",
+            "chess":{"type": "bishop","color":"white"},
+            "notes":[
+                "There is a painting of Baroness Auravel wearing the emerald bracelet and moon necklace in this room.",
+                "There is a photogrpah of Hebert, Simon, and their father, Tomas. Tomas is pointing off the edge of the four-flame square."
             ]
         },
         {
@@ -92,6 +129,31 @@
             ]
         },
         {
+            "name": "Den",
+            "effect": "+1 💎",
+            "description": "A more traditional family room, warm and inviting. So comfortable, one might assume that the countless clocks surrounding the sofas are placed in a futile attempt to avoid inevitably wasting the entire day here.",
+            "type": ["Blueprint"],
+            "rarity": "Commonplace",
+            "chess": {"type":"pawn","color":"white"},
+            "notes":[
+                "There is a conspicious box underneath the clock on the mantle.",
+                "There are a ton of clocks in this room. One of them has a pendulum that doesn't work.",
+                "There is a blue vase in this room."
+            ]
+        },
+        {
+            "name": "Pantry",
+            "effect": "+4 🪙",
+            "description": "A well stocked pantry is always the true test of a large estate, and keeping Mt. Holly's wide gamut of ingredients and supplies stocked has always been one of the primary priorities of the house staff.",
+            "type":["Blueprint"],
+            "rarity": "Commonplace",
+            "chess": "n/a",
+            "notes":[
+                "There is a note to Bridgette about stocking the estate with food. It has a clue that directs to one of the 2 microchips.",
+                "There is a timer in this room."
+            ]
+        },
+        {
             "name": "Utility Closet",
             "effect": "⚙️ Breaker Box",
             "description": "One benefit of the restoration of old buildings is that it allows the owners to update and add modern amenities. The utility closet and the circuit breaker box within were set up when gas powered lighting was retired and replaced by a more fashionable home electrical system.",
@@ -102,9 +164,47 @@
                 "You unlock the Gemstone cavern here by inputting the right V.A.C code. Instructions for the code are found in the emails only accessible from the Office.",
                 "There is a removed and scratched out switch for 'Cabinet'"
             ]
+        },
+        {
+            "name": "Dining Room",
+            "effect": "🍽️ Each day, a meal is served inthe dining room after Rank 8 has been reached.",
+            "description": "An intimate and warm room with a large dining table boasting a serving tray with a silver dome cover. Dinner is served here each evening.",
+            "type":["Blueprint"],
+            "rarity": "Standard",
+            "chess": {"type":"pawn","color":"white"},
+            "notes": [
+                "Theres a black vase in this room.",
+                "This room has a giant window facing the mountain when on Rank 1, otherwise it has the symbol of mount holly resting on a fireplace mantle."
+            ]
         }
     ],
     "Bedrooms": [
+        {
+            "name": "Bedroom",
+            "effect": "🚪 Whenever you enter this room, gain 2 👣.",
+            "description": "A familiar room that you may have slept in at some prior visit in the past. Like most bedrooms of the estate, these quarters offer you a little rest and recuperation during your long days exploring the surrounding rooms.",
+            "type":["🚪 Entry", "Bedroom"],
+            "rarity": "Commonplace",
+            "chess": {"type":"pawn","color":"white"},
+            "notes":[
+                "There's a hat in this room.",
+                "There's a finger pointing down in this room.",
+                "There's a photo of Baroness Auravel in this room.",
+                "There's a reddington postcard in this room."
+            ]
+        },
+        {
+            "name": "Boudoir",
+            "description": "A private salon with a plethora of fainting couches and chaise longues that served both as a dressing room for her Ladyship in the mornings and a cozy sitting room for her in the evenings.",
+            "type": ["Bedroom"],
+            "rarity": "Standard",
+            "chess": "n/a",
+            "safe": "Behind the mirror. Code is 1225",
+            "notes":[
+                "There is a photo of christmas in this room which indicates to put that date into the safe.",
+                "This room contains Letter 4."
+            ]
+        },
         {
             "name": "Guest Bedroom",
             "effect": "+10 👣",
@@ -140,6 +240,18 @@
                 "There is a torn note regarding the closing of the West Wing. It has a date on it.",
                 "There is a black vase in this room."
             ]
+        },
+        {
+            "name": "Corridor",
+            "effect": "Corridor is always left unlocked.",
+            "description": "A long hall with two doors at either end that had been one of your uncle's most frequently traveled rooms. Consequently, he had left strict instructions with the household staff that the doors of this corridor should never under any circumstance be locked.",
+            "type": "Hallway",
+            "rarity": "Commonplace",
+            "chess": "n/a",
+            "notes":[
+                "There are two black vases in this room.",
+                "There is a hat in this room."
+            ]
         }
     ],
     "Green Rooms": [
@@ -152,6 +264,17 @@
             "chess": "n/a",
             "notes": [
 
+            ]
+        },
+        {
+            "name": "Veranda",
+            "effect": "🍀 Greater chance of finding items in Green Rooms.",
+            "description": "This relaxing breezeway serves s an ideal spot for rocking chairs and lemonade.",
+            "cost": "💎💎",
+            "type": ["Green Room"],
+            "rarity": "Unused",
+            "notes": [
+                "You can see the statue to the east of the house if you place this room right."
             ]
         }
     ],
@@ -184,6 +307,17 @@
     ],
     "Outer Rooms": [
         {
+            "name": "Toolshed",
+            "effect": "2 special items",
+            "description": "A simple shed with a variety of tools used by the groundskeepers in the course of their duties.",
+            "type": ["Blueprint","Dead End", "Outer Room"],
+            "rarity": "Unusual",
+            "chess": "n/a",
+            "notes":[
+
+            ]
+        },
+        {
             "name": "Schoolhouse",
             "effect": "📐 Adds 8 Classrooms to today's Draft Pool.",
             "description": "Long before Reddington Elementary was opened, school convened in a single small building. As the student body grew over the years, the need for separate classrooms for each grade arose and the Mt. Holly Schoolhouse was officially closed down.",
@@ -193,7 +327,8 @@
             "notes":[
                 "There is a desk with 'Herbie' scratched into it.",
                 "'within a timely manor' is written on the chalk board.",
-                "There is a closing adress written on the desk"
+                "There is a closing adress written on the desk",
+                "You can toggle one of the four gas flames here."
             ]
         }
     ],
@@ -235,6 +370,14 @@
             "notes":[
                 "There's a birdbath here near the garage.",
                 "There's a birdbath here near the Outer Room."
+            ]
+        },
+        {
+            "name": "Gemstone Cavern",
+            "effect": "Each day you will start with an extra 2 💎.",
+            "notes":[
+                "There is a note talking about access to the underground here.",
+                "You can toggle one of the four gas flames here."
             ]
         }
     ]

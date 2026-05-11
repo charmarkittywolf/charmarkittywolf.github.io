@@ -83,7 +83,7 @@
             "chess":{"type": "bishop","color":"white"},
             "notes":[
                 "There is a painting of Baroness Auravel wearing the emerald bracelet and moon necklace in this room.",
-                "There is a photogrpah of Hebert, Simon, and their father, Tomas. Tomas is pointing off the edge of the four-flame square."
+                "There is a photogrpah of Hebert, Simon, and their father, Tomas. Tomas is pointing off the edge at the pillars in the cliffside."
             ]
         },
         {
@@ -154,6 +154,19 @@
             ]
         },
         {
+            "name": "Drawing Room",
+            "effect": "📐 You may draw new Floor Plans while drafting in this room.",
+            "description": "A social sitting rooma dorned wall to wall with artwork and drawings. An unfinished sketch of your uncle sits on an easel in the middle of the room, providing a vivid image of what were prsumably his final days (depending on when the project was abandoned).",
+            "cost":"💎",
+            "type":"📐 Drafting, Blueprint",
+            "rarity": "Commonplace",
+            "chess": "pawn",
+            "safe": "Unlocked by the candle on the fireplace. Code still yet unknown.",
+            "notes":[
+                
+            ]
+        },
+        {
             "name": "Utility Closet",
             "effect": "⚙️ Breaker Box",
             "description": "One benefit of the restoration of old buildings is that it allows the owners to update and add modern amenities. The utility closet and the circuit breaker box within were set up when gas powered lighting was retired and replaced by a more fashionable home electrical system.",
@@ -166,6 +179,18 @@
             ]
         },
         {
+            "name": "Security",
+            "effect": "⚙️ View inventory of all items currently in the house.",
+            "description": "A control room with state of the art surveillance equipment, inventory system, and access control via an electronic computer terminal This room is where the estate's patrol guards kick up their feet and thank their stars they are living in a modern era.",
+            "cost":"💎",
+            "type":["⚙️ Mechanical", "Blueprint"],
+            "rarity":"Standard",
+            "chess":"Knight",
+            "notes":[
+
+            ]
+        },
+        {
             "name": "Dining Room",
             "effect": "🍽️ Each day, a meal is served inthe dining room after Rank 8 has been reached.",
             "description": "An intimate and warm room with a large dining table boasting a serving tray with a silver dome cover. Dinner is served here each evening.",
@@ -175,6 +200,17 @@
             "notes": [
                 "Theres a black vase in this room.",
                 "This room has a giant window facing the mountain when on Rank 1, otherwise it has the symbol of mount holly resting on a fireplace mantle."
+            ]
+        },
+        {
+            "name": "Observatory",
+            "effect": "+1 ⭐",
+            "description": "Housing an impressively large telescope, Mount Holly's observatory is a window to the world above and beyond the clouds and sky. Through its mirrored lens, even a novice stargazer will be able to distinctly appreciate the wonder, signs and constellations that punctuate the tapestry of night.",
+            "type":["Blueprint"],
+            "rarity": "Standard",
+            "chess": "Knight",
+            "notes":[
+                "This room contains The Fixed Stars."
             ]
         }
     ],
@@ -242,15 +278,36 @@
             ]
         },
         {
+            "name": "East Wing Hall",
+            "description": "This fenestrated hallway overlooks the east side of the estate grounds and is warmed in the early day by the light of the rising afternoon sun.",
+            "type":["Hallway"],
+            "rarity": "Unusual",
+            "chess":"n/a",
+            "notes":[
+
+            ]
+        },
+        {
             "name": "Corridor",
             "effect": "Corridor is always left unlocked.",
             "description": "A long hall with two doors at either end that had been one of your uncle's most frequently traveled rooms. Consequently, he had left strict instructions with the household staff that the doors of this corridor should never under any circumstance be locked.",
-            "type": "Hallway",
+            "type": ["Hallway"],
             "rarity": "Commonplace",
             "chess": "n/a",
             "notes":[
                 "There are two black vases in this room.",
                 "There is a hat in this room."
+            ]
+        },
+        {
+            "name": "Passageway",
+            "description": "A long ramped series of unfinished passages used primarily by the servant staff to traverse the estate quickly.",
+            "cost":"💎💎",
+            "type":["Hallway"],
+            "rarity":"Commonplace",
+            "chess":"n/a",
+            "notes":[
+
             ]
         }
     ],
@@ -303,6 +360,17 @@
                 "There are stained glass depictions of all of the Ajrean Angels here. They are used in the Tomb to unlock access to the underground.",
                 "The description says eight, but there are only seven angels? I think lighting the torches might reveal the eighth."
             ]
+        },
+        {
+            "name": "Gymnasium",
+            "effect":"🚪 Whenever you enter Gymnasium, lose 2 👣.",
+            "description": "A half-court intended for basketball and racquetball which is seldom used by anyone apart from the junior staff during their lunch hour. At least they did before Mrs. Babbage disallowed the practice after noticing how worn out staff members were after a game.",
+            "type": ["Entry","Red Room"],
+            "rarity": "Standard",
+            "chess":"n/a",
+            "notes":[
+                
+            ]
         }
     ],
     "Outer Rooms": [
@@ -329,6 +397,18 @@
                 "'within a timely manor' is written on the chalk board.",
                 "There is a closing adress written on the desk",
                 "You can toggle one of the four gas flames here."
+            ]
+        },
+        {
+            "name": "Hovel",
+            "effect": "Special FLoorplans now cost additional 👣 instead of 💎.",
+            "description": "A squalid dwelling on the edge of the estate belonging to one of the groundskeepers.",
+            "type": ["Bedroom","Dead End","Outer Room"],
+            "rarity": "Unusual",
+            "chess": "n/a",
+            "notes":[
+                "One of the four flame things can be found here",
+                "A letter of dismissal can be found directed towards the old groundskeeper."
             ]
         }
     ],
@@ -378,6 +458,19 @@
             "notes":[
                 "There is a note talking about access to the underground here.",
                 "You can toggle one of the four gas flames here."
+            ]
+        }
+    ],
+    "Underground":[
+        {
+            "name": "The Precipice",
+            "notes":[
+                "The chess room can be activated by moving the pieces onto spaces that have the matching room.",
+                "There is a power-hammerable section of the chess-room.",
+                "Foreman's log 3 can be found here along with a date.",
+                "There is what looks to be a section of wall that might be hammerable? Or somehow openable?",
+                "An entrance to the rest of the underground can be found here",
+                "A torn up version of Realm and Rune is found here."
             ]
         }
     ]

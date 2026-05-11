@@ -6,3 +6,15 @@ body{
     overflow:hidden;
     touch-action:none;
 }
+
+a:link {
+    color: rgb(243, 172, 210);
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:visited {
+    color: rgb(243, 172, 210);
+    background-color: transparent;
+    text-decoration: none;
+}

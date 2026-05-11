@@ -138,6 +138,10 @@ a:visited {
     text-decoration: none;
 }
 
+.link-description:hover{
+    cursor:pointer;
+}
+
 #music-popup{
     position: absolute;
     top: 0;

@@ -43,6 +43,16 @@
     flex-direction: column;
 }
 
+#project-container{
+    display:flex;
+    flex-direction:row;
+}
+
+.project{
+    display:flex;
+    flex-direction:column;
+}
+
 #main-task-title{
     font-family:"Orbitron";
     text-align:center;

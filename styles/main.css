@@ -95,6 +95,7 @@ li{
     max-width:-webkit-fill-available;
     max-width: -moz-available;
     padding-top:15px;
+    width:450px;
 }
 .quick-nav-button{
     text-align:center;

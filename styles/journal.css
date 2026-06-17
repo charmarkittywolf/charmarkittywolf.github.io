@@ -111,18 +111,22 @@ li > p {
 }
 
 a:link {
-    color: deeppink;
+    color: black;
     background-color: transparent;
-    text-decoration: underline deeppink;
-    font-weight:bold;
-}
-a:visited{
-    color: deeppink;
-    background-color: transparent;
-    text-decoration: underline deeppink;
+    text-decoration: none;
 }
 a:hover{
     cursor:pointer;
+}
+#splash-page:hover{
+    cursor:pointer;
+    color:orange;
+}
+
+a:visited {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
 }
 
 #main-task{
@@ -224,7 +228,4 @@ nav > span:hover{
 
 .table-section > p{
     text-align:center;
-}
-a:hover{
-    cursor:pointer;
 }

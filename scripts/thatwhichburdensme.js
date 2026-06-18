@@ -7,6 +7,8 @@ let loadHope = function(){
         $(`#hope-${hope}`).removeClass("content-expand")
         hope++
         $(`#hope-${hope}`).addClass("content-expand")
+        $("#background").css("opacity", `${.1*hope}`)
+        $("#background-2").css("opacity", `${.1*hope}`)
         $("#background-3").css("transform",`scale(${5*hope})`)
         if(hope==2){
             $("body").css("animation","rainbow 10s linear infinite")
@@ -64,30 +66,44 @@ $(".title").on("click",function(){
                 $this.css("text-shadow","0px 1px red")
             },500)
             if(burden==1){
+                $("#background").css("opacity", ".85")
+                $("#background-2").css("opacity", ".85")
                 $("#background-3").css("transform","scale(44.75)")
                 $("body").css("background-color","rgb(255,245,245")
             }
             if(burden==2){
+                $("#background").css("opacity", ".70")
+                $("#background-2").css("opacity", ".70")
                 $("#background-3").css("transform","scale(38.5)")
                 $("body").css("background-color","rgb(255,210,210")
             }
             if(burden==3){
+                $("#background").css("opacity", ".55")
+                $("#background-2").css("opacity", ".55")
                 $("#background-3").css("transform","scale(32.25)")
                 $("body").css("background-color","rgb(255,175,175")
             }
             if(burden==4){
+                $("#background").css("opacity", ".40")
+                $("#background-2").css("opacity", ".40")
                 $("#background-3").css("transform","scale(26)")
                 $("body").css("background-color","rgb(255,140,140")
             }
             if(burden==5){
+                $("#background").css("opacity", ".25")
+                $("#background-2").css("opacity", ".25")
                 $("#background-3").css("transform","scale(19.75)")
                 $("body").css("background-color","rgb(255,105,105")
             }
             if(burden==6){
+                $("#background").css("opacity", ".10")
+                $("#background-2").css("opacity", ".10")
                 $("#background-3").css("transform","scale(13.5)")   
                 $("body").css("background-color","rgb(255,70,70")    
             }
             if(burden==7){
+                $("#background").css("opacity", "0")
+                $("#background-2").css("opacity", "0")
                 $("#background-3").css("transform","scale(6.25)") 
                 $("body").css("background-color","rgb(255,35,35")     
             }

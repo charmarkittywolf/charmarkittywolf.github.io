@@ -18,7 +18,7 @@ let heyTrigger = function(){
         $("#testSound").css('color',"white");
     },600)
     console.log("Hey!")
-    $("testSound").off("click");
+    $("#testSound").off("click");
     $("#testSound").on("click",function(){
         playSound("Hey")
         clicked=true;

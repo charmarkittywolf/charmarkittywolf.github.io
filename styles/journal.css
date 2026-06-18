@@ -123,6 +123,15 @@ a:hover{
     color:orange;
 }
 
+.table-link:visited, .table-link:link{
+    color: saddlebrown
+}
+
+.table-link:hover{
+    color:orange;
+    cursor:pointer;
+}
+
 a:visited {
     color: black;
     background-color: transparent;

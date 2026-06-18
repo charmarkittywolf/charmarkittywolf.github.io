@@ -123,11 +123,13 @@ a:hover{
     color:orange;
 }
 
-.table-link:visited, .table-link:link{
-    color: saddlebrown
+.journal-link:visited, .journal-link:link, .table-link:visited, .table-link:link{
+    color:saddlebrown;
+    text-decoration:underline;
+    display:inline;
 }
 
-.table-link:hover{
+.table-link:hover, .journal-link:hover{
     color:orange;
     cursor:pointer;
 }

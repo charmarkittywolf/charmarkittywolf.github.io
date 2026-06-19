@@ -71,3 +71,59 @@ $("#next").on("click",function(){
 $("#return-to-contents").on("click",function(){
     window.location.href = "../table-of-contents.html";
 })
+
+let turnOffClick = function(element,sib){
+    element.siblings(sib).css("height","0");
+    element.off("click");
+    element.on("click",function(){
+        turnOnClick(element,sib);
+    })
+}
+
+let turnOnClick = function(element,sib){
+    element.siblings(sib).css("visibility","visible");
+    element.siblings(sib).css("height","auto");
+    element.off("click");
+    element.on("click",function(){
+        turnOffClick(element,sib);
+    })
+}
+
+let turnOnClickArchives = function(element){
+    setTimeout(function(){
+        $(".pixel-book").css("transform","scale(5)")
+    },500)
+    $("#archives-entrance").css("height","178px")
+    element.off("click");
+    element.on("click",function(){
+        console.log("TEST")
+        turnOffClickArchives(element);
+    })
+}
+
+let turnOffClickArchives = function(element){
+    setTimeout(function(){
+        $("#archives-entrance").css("height","0px")
+    },500)
+    $(".pixel-book").css("transform","scale(0)")
+    element.off("click");
+    element.on("click",function(){
+        turnOnClickArchives(element);
+    })
+}
+
+$(".table-category").on("click",function(){
+    turnOnClick($(this),"p");
+})
+
+$("#archives").on("click",function(){
+    turnOnClickArchives($(this))
+})
+
+
+$(".pixel-book").on("mousedown", function(){
+    $(".pixel-book").attr("src","../images/BookLocked.gif");
+})
+$(".pixel-book").on("mouseup", function(){
+    $(".pixel-book").attr("src","../images/Book.gif")
+})

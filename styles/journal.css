@@ -229,8 +229,15 @@ nav > span:hover{
     padding:20px;
 }
 
-.table-category{
+.table-category, #archives{
     text-align:center;
+    text-decoration:underline;
+    background-color:cornsilk;
+    z-index: 1;
+    position: relative;
+}
+.table-category:hover, #archives:hover{
+    cursor:pointer;
 }
 
 #journal-title{
@@ -239,4 +246,50 @@ nav > span:hover{
 
 .table-section > p{
     text-align:center;
+    height:0;
+    visibility: hidden;
+    transition:1000ms;
+}
+
+#archives{
+    transition:500ms;
+}
+
+.pixel-book{
+    margin-top:74px;
+    transform: scale(0);
+    image-rendering: crisp-edges;
+    background-color: cornsilk;
+    border: 0px;
+    transition:500ms;
+    transform-origin:center;
+}
+
+.pixel-book:active{
+    animation: subtle-shake 0.5s ease-in-out infinite;
+}
+
+@keyframes subtle-shake {
+    0%, 100% {
+        transform: rotate(0deg) scale(5);
+    }
+    20% {
+        transform: rotate(-3deg) scale(5); /* Tilt left */
+    }
+    40% {
+        transform: rotate(2deg) scale(5)  /* Tilt right */
+    }
+    60% {
+        transform: rotate(-2deg) scale(5); /* Tilt left slightly less */
+    }
+    80% {
+        transform: rotate(3deg) scale(5);  /* Tilt right */
+    }
+}
+
+
+#archives-entrance{
+    height:0px;
+    justify-self: center;
+    transition:1000ms;
 }

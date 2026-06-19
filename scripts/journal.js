@@ -131,3 +131,7 @@ $(".pixel-book").on("mouseup touchend", function(){
 $(".pixel-book").on("contextmenu", function(e) {
     e.preventDefault();
 });
+
+$(".pixel-book").on('dragend', function() {
+    $(".pixel-book").attr("src","../images/Book.gif")
+});

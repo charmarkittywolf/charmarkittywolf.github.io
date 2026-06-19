@@ -121,9 +121,9 @@ $("#archives").on("click",function(){
 })
 
 
-$(".pixel-book").on("mousedown", function(){
+$(".pixel-book").on("mousedown touchstart", function(){
     $(".pixel-book").attr("src","../images/BookLocked.gif");
 })
-$(".pixel-book").on("mouseup", function(){
+$(".pixel-book").on("mouseup touchend", function(){
     $(".pixel-book").attr("src","../images/Book.gif")
 })

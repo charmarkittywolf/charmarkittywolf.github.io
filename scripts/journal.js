@@ -127,3 +127,7 @@ $(".pixel-book").on("mousedown touchstart", function(){
 $(".pixel-book").on("mouseup touchend", function(){
     $(".pixel-book").attr("src","../images/Book.gif")
 })
+
+$(".pixel-book").on("contextmenu", function(e) {
+    e.preventDefault();
+});

@@ -96,7 +96,6 @@ let turnOnClickArchives = function(element){
     $("#archives-entrance").css("height","178px")
     element.off("click");
     element.on("click",function(){
-        console.log("TEST")
         turnOffClickArchives(element);
     })
 }
@@ -123,9 +122,49 @@ $("#archives").on("click",function(){
 
 $(".pixel-book").on("mousedown touchstart", function(){
     $(".pixel-book").attr("src","../images/BookLocked.gif");
+
 })
+
 $(".pixel-book").on("mouseup touchend", function(){
     $(".pixel-book").attr("src","../images/Book.gif")
+})
+
+let DeepKey = false;
+$("#Deep-Archives-Key").on("dragstart",function(){
+    DeepKey = true;
+})
+$("#Deep-Archives-Key").on("dragend",function(event){
+    console.log("Uhuh.")
+    DeepKey = false;
+    let x = event.originalEvent.clientX;
+    let y = event.originalEvent.clientY;
+    let targetDiv = $(".pixel-book")
+    console.log(targetDiv);
+    console.log(x + " " + y)
+    const offset = targetDiv.offset();
+    console.log(offset)
+    const tLeft = offset.left;
+    const tTop = offset.top;
+    const tRight = tLeft + 178;
+    const tBottom = tTop + 178;
+    if (x >= tLeft && x <= tRight && y >= tTop && y <= tBottom) {
+        window.location.href = "/secret-page.html"
+    }
+})
+
+$(".pixel-book").on("dragover", function(){
+    if(DeepKey){
+        $(".pixel-book").attr("src","../images/BookUnlocked.gif");
+        $(".pixel-book").addClass("activated")
+    }else{
+        $(".pixel-book").attr("src","../images/BookLocked.gif");
+        $(".pixel-book").addClass("activated")
+    }
+})
+
+$(".pixel-book").on("dragleave", function(){
+    $(".pixel-book").attr("src","../images/Book.gif")
+    $(".pixel-book").removeClass("activated")
 })
 
 $(".pixel-book").on("contextmenu", function(e) {

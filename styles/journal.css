@@ -4,6 +4,7 @@ body{
     width:auto;
     height:auto;
     overflow:auto;
+    min-height:100vh;
 }
 .picture{
     box-shadow: 0 5px 12px -2px rgba(0, 0, 0, .5);
@@ -265,7 +266,7 @@ nav > span:hover{
     transform-origin:center;
 }
 
-.pixel-book:active{
+.pixel-book:active, .activated{
     animation: subtle-shake 0.5s ease-in-out infinite;
 }
 

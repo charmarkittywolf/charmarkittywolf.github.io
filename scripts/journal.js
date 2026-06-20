@@ -111,12 +111,38 @@ let turnOffClickArchives = function(element){
     })
 }
 
+let turnOnClickSteves = function(element){
+    setTimeout(function(){
+        $(".card-image").css("transform","scale(3)")
+    },500)
+    $("#the-steves-cards").css("height","195px")
+    element.off("click");
+    element.on("click",function(){
+        turnOffClickSteves(element);
+    })
+}
+
+let turnOffClickSteves = function(element){
+    setTimeout(function(){
+        $("#the-steves-cards").css("height","0px")
+    },500)
+    $(".card-image").css("transform","scale(0)")
+    element.off("click");
+    element.on("click",function(){
+        turnOnClickSteves(element);
+    })
+}
+
 $(".table-category").on("click",function(){
     turnOnClick($(this),"p");
 })
 
 $("#archives").on("click",function(){
     turnOnClickArchives($(this))
+})
+
+$("#the-steves").on("click",function(){
+    turnOnClickSteves($(this))
 })
 
 
@@ -129,31 +155,29 @@ $(".pixel-book").on("mouseup touchend", function(){
     $(".pixel-book").attr("src","../images/Book.gif")
 })
 
-let DeepKey = false;
-$("#Deep-Archives-Key").on("dragstart",function(){
-    DeepKey = true;
+let DarkKey = false;
+$("#Dark-Archives-Key").on("dragstart",function(){
+    DarkKey = true;
+    $("#Dark-Archives-Key").css("cursor","grab !important")
 })
-$("#Deep-Archives-Key").on("dragend",function(event){
-    console.log("Uhuh.")
-    DeepKey = false;
+$("#Dark-Archives-Key").on("dragend",function(event){
+    DarkKey = false;
     let x = event.originalEvent.clientX;
     let y = event.originalEvent.clientY;
     let targetDiv = $(".pixel-book")
-    console.log(targetDiv);
-    console.log(x + " " + y)
     const offset = targetDiv.offset();
-    console.log(offset)
     const tLeft = offset.left;
     const tTop = offset.top;
     const tRight = tLeft + 178;
     const tBottom = tTop + 178;
     if (x >= tLeft && x <= tRight && y >= tTop && y <= tBottom) {
-        window.location.href = "/secret-page.html"
+        window.location.href = "../secret-page.html"
     }
 })
 
 $(".pixel-book").on("dragover", function(){
-    if(DeepKey){
+    if(DarkKey){
+        event.preventDefault();
         $(".pixel-book").attr("src","../images/BookUnlocked.gif");
         $(".pixel-book").addClass("activated")
     }else{
@@ -174,3 +198,116 @@ $(".pixel-book").on("contextmenu", function(e) {
 $(".pixel-book").on('dragend', function() {
     $(".pixel-book").attr("src","../images/Book.gif")
 });
+
+let card7 = function(){
+    $("#card-7").css("transform","scale(3) translateY(-50px)")
+    setTimeout(function(){
+        $("#card-7").css("z-index","4")
+        $("#card-7").css("transition","transform 3000ms")
+        $("#card-7").css("transform","scale(5) translate(50vw,-20vh")
+    },500)
+}
+
+let card6 = function(){
+    $("#card-6").css("transform","scale(3) translateY(-50px)")
+    setTimeout(function(){
+        $("#card-6").css("z-index","4")
+        $("#card-6").css("transition","transform 3000ms")
+        $("#card-6").css("transform","scale(5) translate(50vw,-40vh")
+    },500)
+}
+
+let card5 = function(){
+    $("#card-5").css("transform","scale(3) translateY(-50px)")
+    setTimeout(function(){
+        $("#card-5").css("z-index","4")
+        $("#card-5").css("transition","transform 3000ms")
+        $("#card-5").css("transform","scale(5) translate(-50vw,-40vh")
+    },500)
+}
+
+let card4 = function(){
+    $("#card-4").css("transform","scale(3) translateY(-50px)")
+    setTimeout(function(){
+        $("#card-4").css("z-index","4")
+        $("#card-4").css("transition","transform 3000ms")
+        $("#card-4").css("transform","scale(5) translate(-50vw,-20vh")
+    },500)
+}
+
+let card3 = function(){
+    $("#card-3").css("transform","scale(3) translateY(-50px)")
+    setTimeout(function(){
+        $("#card-3").css("z-index","4")
+        $("#card-3").css("transition","transform 3000ms")
+        $("#card-3").css("transform","scale(5) translate(-50vw,20vh")
+    },500)
+}
+
+let card2 = function(){
+    $("#card-2").css("transform","scale(3) translateY(-50px)")
+    setTimeout(function(){
+        $("#card-2").css("z-index","4")
+        $("#card-2").css("transition","transform 3000ms")
+        $("#card-2").css("transform","scale(5) translate(-50vw,40vh")
+    },500)
+}
+
+let card1 = function(){
+    $("#card-1").css("transform","scale(3) translateY(-50px)")
+    setTimeout(function(){
+        $("#card-1").css("z-index","4")
+        $("#card-1").css("transition","transform 3000ms")
+        $("#card-1").css("transform","scale(5) translate(50vw,40vh")
+    },500)
+}
+
+let cardsOn = function(){
+    $("#fixed-card-7").css("right","calc(17vw - 20vh)")
+    $("#fixed-card-7").css("top","calc(6vh)")
+    $("#fixed-card-6").css("right","calc(41vw - 20vh)")
+    $("#fixed-card-6").css("top","calc(6vh)")
+    $("#fixed-card-5").css("left","calc(41vw - 20vh)")
+    $("#fixed-card-5").css("top","calc(6vh)")
+    $("#fixed-card-4").css("left","calc(17vw - 20vh)")
+    $("#fixed-card-4").css("top","calc(6vh)")
+    $("#fixed-card-3").css("left","calc(41vw - 20vh)")
+    $("#fixed-card-3").css("bottom","calc(6vh)")
+    $("#fixed-card-2").css("left","calc(17vw - 20vh)")
+    $("#fixed-card-2").css("bottom","calc(6vh)")
+    $("#fixed-card-1").css("right","calc(41vw - 20vh)")
+    $("#fixed-card-1").css("bottom","calc(6vh)")
+}
+
+$("#cards-closed").on("click",function(){
+    $("#cards-closed").css("display","none");
+    $("#cards-front").css("display","block");
+    $("#cards-back").css("display","block");
+    $(".card").css("display","block");
+    setTimeout(function(){
+        card7();
+    },500)
+    setTimeout(function(){
+        card6();
+    },750)
+    setTimeout(function(){
+        card5();
+    },1000)
+    setTimeout(function(){
+        card4();
+    },1250)
+    setTimeout(function(){
+        card3();
+    },1500)
+    setTimeout(function(){
+        card2();
+    },1750)
+    setTimeout(function(){
+        card1();
+    },2000)
+    setTimeout(function(){
+        $(".card").css("display","none")
+        cardsOn();
+    },3500)
+})
+

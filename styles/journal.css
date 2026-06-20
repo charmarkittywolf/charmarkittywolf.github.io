@@ -3,7 +3,8 @@ body{
     color:black;
     width:auto;
     height:auto;
-    overflow:auto;
+    overflow-y:auto;
+    overflow-x:hidden;
     min-height:100vh;
 }
 .picture{
@@ -230,14 +231,14 @@ nav > span:hover{
     padding:20px;
 }
 
-.table-category, #archives{
+.table-category, #archives, #the-steves{
     text-align:center;
     text-decoration:underline;
     background-color:cornsilk;
     z-index: 1;
     position: relative;
 }
-.table-category:hover, #archives:hover{
+.table-category:hover, #archives:hover, #the-steves:hover{
     cursor:pointer;
 }
 
@@ -252,7 +253,7 @@ nav > span:hover{
     transition:1000ms;
 }
 
-#archives{
+#archives,#the-steves{
     transition:500ms;
 }
 
@@ -288,9 +289,53 @@ nav > span:hover{
     }
 }
 
+#cards-closed:hover{
+    cursor:pointer;
+}
 
-#archives-entrance{
+
+#archives-entrance, #the-steves-cards{
     height:0px;
     justify-self: center;
     transition:1000ms;
+}
+
+#the-steves-cards{
+    transform: translate(-27px, 60px);
+    z-index: 4;
+    position: relative;
+}
+
+.card-image{
+    background-color: #00000000;
+    position: absolute;
+    z-index: 3;
+    transform: scale(0);
+    image-rendering: crisp-edges;
+    border: none;
+    transition:500ms;
+}
+
+.card, #cards-front, #cards-back{
+    display:none;
+}
+
+.fixed-card-left{
+    left:-300px;
+
+}
+
+.fixed-card-left, .fixed-card-right{
+    position:fixed;
+    transition:1000ms;
+    height:40vh;
+    image-rendering: crisp-edges;
+    background-color: #00000000;
+    border:none;
+    z-index:5;
+    aspect-ratio: auto;
+}
+
+.fixed-card-right{
+    right: -300px;
 }

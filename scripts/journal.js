@@ -34,7 +34,12 @@ let mobileClick = function(){
 }
 
 if (isMobile) {
+    $(".fixed-card-left").css("height","20vh")
+    $(".fixed-card-right").css("height","20vh")
     $("img").css("width","-webkit-fill-available")
+    $(".card-image").css("width","auto")
+    $(".fixed-card-left").css("width","auto")
+    $(".fixed-card-right").css("width","auto")
     $(".picture").css("width","-webkit-fill-available")
     $(".picture-box").css("width","-webkit-fill-available")
     $("#entry").css("width","90%");
@@ -263,20 +268,37 @@ let card1 = function(){
 }
 
 let cardsOn = function(){
-    $("#fixed-card-7").css("right","calc(17vw - 20vh)")
-    $("#fixed-card-7").css("top","calc(6vh)")
-    $("#fixed-card-6").css("right","calc(41vw - 20vh)")
-    $("#fixed-card-6").css("top","calc(6vh)")
-    $("#fixed-card-5").css("left","calc(41vw - 20vh)")
-    $("#fixed-card-5").css("top","calc(6vh)")
-    $("#fixed-card-4").css("left","calc(17vw - 20vh)")
-    $("#fixed-card-4").css("top","calc(6vh)")
-    $("#fixed-card-3").css("left","calc(41vw - 20vh)")
-    $("#fixed-card-3").css("bottom","calc(6vh)")
-    $("#fixed-card-2").css("left","calc(17vw - 20vh)")
-    $("#fixed-card-2").css("bottom","calc(6vh)")
-    $("#fixed-card-1").css("right","calc(41vw - 20vh)")
-    $("#fixed-card-1").css("bottom","calc(6vh)")
+    if(isMobile){
+        $("#fixed-card-7").css("right","calc(8vw)")
+        $("#fixed-card-7").css("top","calc(5vh)")
+        $("#fixed-card-6").css("right","calc(8vw)")
+        $("#fixed-card-6").css("top","calc(28vh)")
+        $("#fixed-card-5").css("left","calc(8vw)")
+        $("#fixed-card-5").css("top","calc(5vh)")
+        $("#fixed-card-4").css("left","calc(8vw)")
+        $("#fixed-card-4").css("top","calc(28vh)")
+        $("#fixed-card-3").css("left","calc(8vw)")
+        $("#fixed-card-3").css("bottom","calc(5vh)")
+        $("#fixed-card-2").css("left","calc(8vw)")
+        $("#fixed-card-2").css("bottom","calc(28vh)")
+        $("#fixed-card-1").css("right","calc(8vw)")
+        $("#fixed-card-1").css("bottom","calc(28vh)")
+    }else{
+        $("#fixed-card-7").css("right","calc(17vw - 20vh)")
+        $("#fixed-card-7").css("top","calc(6vh)")
+        $("#fixed-card-6").css("right","calc(41vw - 20vh)")
+        $("#fixed-card-6").css("top","calc(6vh)")
+        $("#fixed-card-5").css("left","calc(41vw - 20vh)")
+        $("#fixed-card-5").css("top","calc(6vh)")
+        $("#fixed-card-4").css("left","calc(17vw - 20vh)")
+        $("#fixed-card-4").css("top","calc(6vh)")
+        $("#fixed-card-3").css("left","calc(41vw - 20vh)")
+        $("#fixed-card-3").css("bottom","calc(6vh)")
+        $("#fixed-card-2").css("left","calc(17vw - 20vh)")
+        $("#fixed-card-2").css("bottom","calc(6vh)")
+        $("#fixed-card-1").css("right","calc(41vw - 20vh)")
+        $("#fixed-card-1").css("bottom","calc(6vh)")        
+    }
 }
 
 $("#cards-closed").on("click",function(){

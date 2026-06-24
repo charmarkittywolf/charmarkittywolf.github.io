@@ -312,3 +312,12 @@ a#splash-page:link{
 #close-inventory:hover{
     cursor:pointer;
 }
+
+.redacted{
+    background-color:black;
+    font-family: 'Jura';
+    color: red;
+    padding-left: 3px;
+    padding-right: 3px;
+    padding-bottom: 1px;
+}

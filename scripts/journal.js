@@ -333,3 +333,7 @@ $("#cards-closed").on("click",function(){
     },3500)
 })
 
+$(".spoiler-button").on("click",function(){
+    $(this).parent().height('auto');
+    $(this).height('0px');
+})

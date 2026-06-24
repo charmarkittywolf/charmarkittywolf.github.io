@@ -32,6 +32,8 @@ body{
     flex-direction:row;
     flex-wrap:wrap;
     justify-content:center;
+    width:max-content;
+    max-width:75vw;
 }
 
 .picture-box{
@@ -156,17 +158,48 @@ a:visited {
     color: white;
     padding: 20px;
     box-shadow: inset 0 5px 12px -2px rgba(1, 1, 1, .5);
-    text-shadow: 0px 0px 1px white;
     padding-bottom:0px;
     width:90%;
     align-self:center;
     margin:10px;
+    padding-top:unset;
+    padding-bottom:20px;
+}
+
+.spoiler-box{
+    height: 40px;
+    overflow: hidden;
+    transition: 3000ms;
+}
+.spoiler-box >p{
+    padding: 15px;
+    padding-top: 7.5px;
+    padding-bottom: 7.5px;
+}
+
+.spoiler-button{
+    height:40px;
+    background-color:black;
+    transition:1000ms;
+    color:white;
+    font-family:"Jura";
+    overflow:hidden;
+    text-align:center;
+    display:flex;
+    align-items:center;
+    justify-content: center;;
+}
+.spoiler-button:hover{
+    cursor:pointer;
+}
+.spoiler-button >p:hover{
+    cursor:pointer;
 }
 
 .discord-box > p{
     padding:10px;
     padding-top:0px;
-    padding-bottom:20px;
+    padding-bottom:5px;
 }
 
 .discord-name{
@@ -175,7 +208,7 @@ a:visited {
     font-family: GGSans;
     text-shadow: 0px 0px 1px white;
     font-size: 17px;
-    padding-bottom:5px;
+    padding-top:15px;
 }
 
 .doc-box{
@@ -338,4 +371,10 @@ nav > span:hover{
 
 .fixed-card-right{
     right: -300px;
+}
+
+.discord-emoji{
+    background-color: #00000000;
+    border: none;
+    height: 42px;
 }

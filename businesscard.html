@@ -1,0 +1,84 @@
+<head>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer">      
+</head>
+<body>
+    <div id="frontside">
+        <hgroup id="title-section">
+            <section id="title-text">
+                <h1 id="welcome-message">
+                    CHAR<span id="rl" class="widthless-character">_</span>LOTTE-MA<span class="widthless-character">=</span>RIE
+                </h1>
+                <div id="silly-quote">charmarkittywolf.github.io</div>
+                </section>
+            <!-- The Below is for if I ever add art. I want everything on this site to be made by me. With exception for fonts and programming languages I suppose. -->
+            <section id="title-image"></section>
+        </hgroup>
+    </div>
+    <div id="backside">
+        <p id="discord"><i class="fa-brands fa-discord"></i> Discord: kitty_wolf</p>
+    </div>
+</body>
+<style>
+    @font-face{
+        font-family: "GGSans";
+        src: url("./assets/ggsans.woff2");
+    }
+    @font-face{
+        font-family: "SisterSpray";
+        src: url("./assets/SisterSpray.ttf");
+    }
+    html{
+        background-color:rgb(93, 93, 93);
+    }
+    body{
+        margin:0px;
+    }
+    #title-section{
+        color:goldenrod;
+    }
+    #title-text{
+        margin-top:25px;
+    }
+    #frontside, #backside{
+        display:flow-root;
+        height:192;
+        width:336px;
+        background-color:black;
+        color:white;
+        margin-bottom:1px;
+    }
+    #welcome-message{
+        font-family: SisterSpray;
+        color: var(--Color);
+        text-shadow: 0px 0px 100px white;
+        border-bottom: solid;
+        margin-bottom: 5px;
+        padding-bottom: 10px;
+        text-align: center;
+        animation: rainbow 8s linear infinite;
+        font-size: 16px;
+        padding-top: 20px;
+    }
+    #silly-quote{
+        text-align:center;
+        border-bottom: solid;
+        animation:rainbow 8s linear infinite;
+        padding-bottom: 5px;
+        font-family: "architects daughter";
+        user-select: none; 
+    }
+    .widthless-character{
+        width: 0px;
+        display: inline-block;
+    }
+    #discord{
+        font-family: GGSans;
+        text-shadow: 0px 0px 1px white;
+        font-size: 17px;
+        padding-bottom:5px;
+        padding-top:5px;
+        text-align:center;
+        background-color: #2e3136;
+    }
+</style>

@@ -16,7 +16,14 @@
         </hgroup>
     </div>
     <div id="backside">
-        <p id="discord"><span id="discord-title"><i class="fa-brands fa-discord"></i> Discord:</span> kitty_wolf</p>
+        <div id="color-box"></div>
+        <p class="link-box" id="discord"><span id="discord-title"><i class="fa-brands fa-discord"></i> Discord:</span> kitty_wolf</p>
+        <p class="link-box" id="twitter"><span id="discord-title"><i class="fa-brands fa-twitter"></i> Twitter:</span> @charmarkitwolf</p>
+        <p id="gave-text">If I gave you this...</p>
+        <p id="explanation">It's cause I think you're cute and/or sexy but I'm shy! <br>Hit me up if you're brave!</p> 
+    <!--     <p id="explanation">It's cause I wanna be friends! <br> Hit me up if you feel the same!</p> -->
+<!--         <p id="explanation">It's cause you asked for a way to contact me.<br> Here ya go! ^_^</p> -->
+        <img id="signature" src="images/CharlieMarlie.png">
     </div>
 </body>
 <style>
@@ -27,6 +34,23 @@
     @font-face{
         font-family: "SisterSpray";
         src: url("./assets/SisterSpray.ttf");
+    }
+    @font-face{
+        font-family: "Chirp";
+        src: url("./assets//ChirpRegular.ttf")
+    }
+    #color-box{
+        height:23px;
+    }
+    #gave-text{
+        font-family: Jura;
+        font-size: 12px;
+        margin-left: 10px;
+    }
+    #explanation{
+        font-family: Architects Daughter;
+        font-size: 12px;
+        transform: rotate(-5deg) translate(20px, -5px);
     }
     html{
         background-color:rgb(93, 93, 93);
@@ -80,6 +104,23 @@
         text-align:center;
         background-color: #2e3136;
     }
+    #twitter{
+        text-align:center;
+        padding-top:5px;
+        padding-bottom:5px;
+        font-family: Chirp;
+        background-color: #26a7de;
+    }
+    #signature{
+        width: 100px;
+        position: absolute;
+        left: 255px;
+        top: 336px;
+    }
+    .link-box{
+        margin:0px;
+    }
+
     #discord-title{
         text-shadow: 0px 0px 1px white;
     }

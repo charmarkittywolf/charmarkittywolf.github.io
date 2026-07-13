@@ -12,6 +12,10 @@
     font-family:"Proxima Nova";
     src: url("../assets/ProximaNova.ttf");
 }
+@font-face{
+    font-family:"Last Rites";
+    src: url("../assets/LastRites.ttf")
+}
 :root{
     --Charlotte-Marie: rgb(255, 137, 58);
     --VioletKittyWolf: rgb(202, 118, 228);
@@ -320,4 +324,10 @@ a#splash-page:link{
     padding-left: 3px;
     padding-right: 3px;
     padding-bottom: 1px;
+}
+
+.christianity{
+    font-family:"Last Rites";
+    color:darkred;
+    text-shadow: 0px 0px 0px black;
 }

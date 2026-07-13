@@ -219,6 +219,7 @@ a:visited {
     font-family: Proxima Nova;
     width: 90%;
     align-self: center;
+    justify-self:center;
 }
 
 .doc-box > p {

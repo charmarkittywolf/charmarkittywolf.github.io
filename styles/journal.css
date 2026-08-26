@@ -138,6 +138,116 @@ a:hover{
     cursor:pointer;
 }
 
+.locked > .journal-link{
+    position:relative;
+    display:inline-block;
+}
+
+.locked{
+    display:inline-block;
+}
+
+.locked > .journal-link::after{
+    content:"";
+    position:absolute;
+    top:50%;
+    left:50%;
+    width:32px;
+    height:32px;
+    background:url("../images/Lock.png") center / contain no-repeat;
+    opacity:0;
+    pointer-events:none;
+    transform:translate(-50%, -50%);
+    transition:opacity 150ms ease-in-out;
+    z-index:1;
+}
+
+.locked > .journal-link:hover::after{
+    opacity:1;
+}
+.locked > .journal-link:hover{
+    background-color:black;
+}
+
+.locked.unlock-hover > .journal-link::after{
+    opacity:1;
+    background-image:url("../images/UnLock.png");
+}
+
+.locked.unlock-hover > .journal-link{
+    color:orange;
+}
+
+.locked.unlock-hover{
+    animation:locked-shake 0.5s ease-in-out infinite;
+}
+
+.locked.shaking{
+    animation: locked-shake 0.5s ease-in-out;
+}
+
+.locked-spoiler, .extra-locked-spoiler{
+    position:relative;
+}
+
+.locked-spoiler::after, .extra-locked-spoiler::after{
+    content:"";
+    position:absolute;
+    top:50%;
+    left:50%;
+    width:32px;
+    height:32px;
+    background:url("../images/Lock.png") center / contain no-repeat;
+    opacity:0;
+    pointer-events:none;
+    transform:translate(-50%, -50%);
+    transition:opacity 150ms ease-in-out;
+    z-index:1;
+}
+
+.locked-spoiler:hover::after, .extra-locked-spoiler:hover::after{
+    opacity:1;
+}
+
+.extra-locked-spoiler::after{
+    width:112px;
+    background-image:url("../images/SuperLock.png"), url("../images/SuperLock.png"), url("../images/SuperLock.png");
+    background-position:center, calc(50% - 40px) center, calc(50% + 40px) center;
+    background-repeat:no-repeat;
+}
+
+.locked-spoiler.unlock-hover::after, .extra-locked-spoiler.unlock-hover::after{
+    opacity:1;
+    background-image:url("../images/UnLock.png");
+}
+
+.locked-spoiler.unlock-hover, .extra-locked-spoiler.unlock-hover{
+    animation:locked-shake 0.5s ease-in-out infinite;
+}
+
+.locked-spoiler.shaking, .extra-locked-spoiler.shaking{
+    animation:locked-shake 0.5s ease-in-out;
+}
+
+@keyframes locked-shake {
+    0%, 100% {
+        transform:rotate(0deg);
+    }
+    20% {
+        transform:rotate(-3deg);
+    }
+    40% {
+        transform:rotate(2deg);
+    }
+    60% {
+        transform:rotate(-2deg);
+    }
+    80% {
+        transform:rotate(3deg);
+    }
+}
+
+
 a:visited {
     color: black;
     background-color: transparent;
@@ -209,6 +319,23 @@ a:visited {
     text-shadow: 0px 0px 1px white;
     font-size: 17px;
     padding-top:15px;
+}
+
+.discord-box > p.discord-reply{
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    font-size: 12px;
+    padding-top:15px;
+}
+
+.discord-reply-name{
+    padding-top:0px;
+}
+
+.arrows{
+    transform: rotate(-90deg);
+    margin-right: 5px;
+    margin-left: 3px;
 }
 
 .doc-box{
@@ -379,3 +506,4 @@ nav > span:hover{
     border: none;
     height: 42px;
 }
+

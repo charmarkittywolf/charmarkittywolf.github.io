@@ -223,12 +223,12 @@ a:hover{
     margin-right:10px;
 }
 
-.journal-link{
+.journal-link-t{
     font-family:"Architects Daughter";
     display:block;
     text-align:center;
 }
-.journal-link:link{
+.journal-link-t:link{
     color:#ffa1a1;
 }
 

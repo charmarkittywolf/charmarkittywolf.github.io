@@ -2,14 +2,13 @@ let sillyQuotes = [
     "Did you know you can kinda just do whatever you want? It's fucked up.",
     "Bloop!",
     "Fiction can change the world!",
-    "It is ignorance and hope that warms the heart.",
-    "TORCHY'S TACOS?!",
     "The Artist Formerly Known as Phoenix Steve",
     "Everything ends, but I've got 60% left.",
     "Battle Damaged Purgatory Hell-World Princess",
     "I feed upon the unwavering spirit and forge my way through the dark journey!",
     "Push Forward!",
-    "With all my love, to this fucking world."
+    "With all my love, to this fucking world.",
+    "She accepted science, but she couldn't reject dreams."
 ]
 let currentQuote = Math.floor(Math.random()*sillyQuotes.length);
 let readQuotes = [currentQuote];

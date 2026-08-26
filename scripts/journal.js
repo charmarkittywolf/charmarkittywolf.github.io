@@ -150,6 +150,66 @@ $("#the-steves").on("click",function(){
     turnOnClickSteves($(this))
 })
 
+$(".locked").on("click",function(event){
+    event.preventDefault();
+    let locked = $(this);
+    locked.removeClass("shaking");
+    void locked[0].offsetWidth;
+    locked.addClass("shaking");
+    locked.one("animationend",function(){
+        locked.removeClass("shaking");
+    });
+})
+
+$(".locked").on("dragover",function(event){
+    if(DarkKey){
+        event.preventDefault();
+        $(this).addClass("unlock-hover");
+    }
+})
+
+$(".locked").on("dragleave",function(){
+    $(this).removeClass("unlock-hover");
+})
+
+$(".locked").on("drop",function(event){
+    event.preventDefault();
+    let href = $(this).children("a").attr("href");
+    $(this).removeClass("unlock-hover");
+    if(href){
+        window.location.href = href;
+    }
+})
+
+$(".locked-spoiler").on("dragover",function(event){
+    if(DarkKey){
+        event.preventDefault();
+        $(this).addClass("unlock-hover");
+    }
+})
+
+$(".extra-locked-spoiler").on("dragover",function(event){
+    if(ForbiddenKey){
+        event.preventDefault();
+        $(this).addClass("unlock-hover");
+    }
+})
+
+$(".locked-spoiler, .extra-locked-spoiler").on("dragleave",function(){
+    $(this).removeClass("unlock-hover");
+})
+
+$(".locked-spoiler").on("drop",function(event){
+    event.preventDefault();
+    $(this).removeClass("unlock-hover locked-spoiler");
+    $(this).click();
+})
+
+$(".extra-locked-spoiler").on("drop",function(event){
+    event.preventDefault();
+    $(this).removeClass("unlock-hover extra-locked-spoiler");
+    $(this).click();
+})
 
 $(".pixel-book").on("mousedown touchstart", function(){
     $(".pixel-book").attr("src","../images/BookLocked.gif");
@@ -160,13 +220,21 @@ $(".pixel-book").on("mouseup touchend", function(){
     $(".pixel-book").attr("src","../images/Book.gif")
 })
 
+let ForbiddenKey = false;
 let DarkKey = false;
 $("#Dark-Archives-Key").on("dragstart",function(){
     DarkKey = true;
     $("#Dark-Archives-Key").css("cursor","grab !important")
 })
+$("#Forbidden-Truth-Key").on("dragstart",function(){
+    ForbiddenKey = true;
+    $("#Forbidden-Truth-Key").css("cursor","grab !important")
+})
 $("#Dark-Archives-Key").on("dragend",function(event){
     DarkKey = false;
+    $(".locked").removeClass("unlock-hover");
+    $(".locked-spoiler").removeClass("unlock-hover");
+    $(".extra-locked-spoiler").removeClass("unlock-hover");
     let x = event.originalEvent.clientX;
     let y = event.originalEvent.clientY;
     let targetDiv = $(".pixel-book")
@@ -178,6 +246,10 @@ $("#Dark-Archives-Key").on("dragend",function(event){
     if (x >= tLeft && x <= tRight && y >= tTop && y <= tBottom) {
         window.location.href = "../secret-page.html"
     }
+})
+$("#Forbidden-Truth-Key").on("dragend",function(){
+    ForbiddenKey = false;
+    $(".extra-locked-spoiler").removeClass("unlock-hover");
 })
 
 $(".pixel-book").on("dragover", function(){
@@ -334,6 +406,16 @@ $("#cards-closed").on("click",function(){
 })
 
 $(".spoiler-button").on("click",function(){
+    if($(this).hasClass("locked-spoiler") || $(this).hasClass("extra-locked-spoiler")){
+        let lockedSpoiler = $(this);
+        lockedSpoiler.removeClass("shaking");
+        void lockedSpoiler[0].offsetWidth;
+        lockedSpoiler.addClass("shaking");
+        lockedSpoiler.one("animationend",function(){
+            lockedSpoiler.removeClass("shaking");
+        });
+        return;
+    }
     $(this).parent().height('auto');
     $(this).height('0px');
 })

@@ -8,7 +8,8 @@ let sillyQuotes = [
     "I feed upon the unwavering spirit and forge my way through the dark journey!",
     "Push Forward!",
     "With all my love, to this fucking world.",
-    "She accepted science, but she couldn't reject dreams."
+    "She accepted science, but she couldn't reject dreams.",
+    "I'll keep coming back together again"
 ]
 let currentQuote = Math.floor(Math.random()*sillyQuotes.length);
 let readQuotes = [currentQuote];

@@ -19,8 +19,13 @@ let showBox = function(){
         hideBox();
     })
 }
-if(inventory.length){
+
+let loadInventory = function(){
+    if(inventory.length){
     console.log("Inventory: " + inventory)
+    if($("#inventory-box").length){
+        $("#inventory-box").remove();
+    }
     $("body").append("<div id='inventory-box'></div>")
     for(let x=0; x<inventory.length; x++){
         $("#inventory-box").append(`<div class='inventory-item'><img id='${inventory[x].replaceAll(" ","-")}' style="max-width: 20vw; max-height: 20vh;"src="/images/${inventory[x].replaceAll(" ","")}.gif"><p style="text-align:center">${inventory[x]}</p></div>`)
@@ -29,8 +34,18 @@ if(inventory.length){
     $("#inventory-box").on("click",function(){
         showBox();
     })
-}else{
-    inventory = [];
+    }else{
+        inventory = [];
+    }
 }
 
+let saveToInventory = function(item){
+    if(!inventory.includes(item)){
+        inventory.push(item);
+        localStorage.setItem("inventory",JSON.stringify(inventory));
+    }
+    loadInventory();
+}
+
+loadInventory();
 

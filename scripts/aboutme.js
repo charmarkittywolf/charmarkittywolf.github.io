@@ -16,7 +16,7 @@ $("#message-link").on("click",function(){
 })
 
 $("#star").on("click",function(){
-    window.location.href = "secret-page.html";
+    window.location.href = "star.html";
 })
 
 $(".charlotte-marie-link").on("click",function(){

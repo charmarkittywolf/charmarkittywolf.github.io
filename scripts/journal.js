@@ -162,7 +162,7 @@ $(".locked").on("click",function(event){
 })
 
 $(".locked").on("dragover",function(event){
-    if(DarkKey){
+    if(RestrictedKey){
         event.preventDefault();
         $(this).addClass("unlock-hover");
     }
@@ -182,7 +182,7 @@ $(".locked").on("drop",function(event){
 })
 
 $(".locked-spoiler").on("dragover",function(event){
-    if(DarkKey){
+    if(RestrictedKey){
         event.preventDefault();
         $(this).addClass("unlock-hover");
     }
@@ -221,17 +221,17 @@ $(".pixel-book").on("mouseup touchend", function(){
 })
 
 let ForbiddenKey = false;
-let DarkKey = false;
-$("#Dark-Archives-Key").on("dragstart",function(){
-    DarkKey = true;
-    $("#Dark-Archives-Key").css("cursor","grab !important")
+let RestrictedKey = false;
+$("#Restricted-Archives-Key").on("dragstart",function(){
+    RestrictedKey = true;
+    $("#Restricted-Archives-Key").css("cursor","grab !important")
 })
 $("#Forbidden-Truth-Key").on("dragstart",function(){
     ForbiddenKey = true;
     $("#Forbidden-Truth-Key").css("cursor","grab !important")
 })
-$("#Dark-Archives-Key").on("dragend",function(event){
-    DarkKey = false;
+$("#Restricted-Archives-Key").on("dragend",function(event){
+    RestrictedKey = false;
     $(".locked").removeClass("unlock-hover");
     $(".locked-spoiler").removeClass("unlock-hover");
     $(".extra-locked-spoiler").removeClass("unlock-hover");
@@ -253,7 +253,7 @@ $("#Forbidden-Truth-Key").on("dragend",function(){
 })
 
 $(".pixel-book").on("dragover", function(){
-    if(DarkKey){
+    if(RestrictedKey){
         event.preventDefault();
         $(".pixel-book").attr("src","../images/BookUnlocked.gif");
         $(".pixel-book").addClass("activated")

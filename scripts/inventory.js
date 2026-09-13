@@ -21,7 +21,7 @@ let showBox = function(){
 }
 
 let loadInventory = function(){
-    if(inventory.length){
+    if(inventory){
     console.log("Inventory: " + inventory)
     if($("#inventory-box").length){
         $("#inventory-box").remove();

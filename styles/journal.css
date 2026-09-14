@@ -512,16 +512,17 @@ nav > span:hover{
     border: none;
     background-color: whitesmoke;
     box-shadow: inset 0 5px 12px -2px rgba(0, 0, 0, .5);
+    max-width: 70vw;
 }
-.vn-picture-caption > p{
+.vn-picture-caption > p, .flashback > p{
     width: max-content;
     max-width: 60vw;
     font-family: EB Garamond;
-    padding-bottom: 5px;
+    padding-bottom: 10px;
     padding-left: 10px;
 }
 
-.vn-picture-caption > .vn-name{
+.vn-picture-caption > .vn-name, .flashback > .vn-name{
     padding-bottom:0px;
     font-weight:bold;
 }
@@ -529,4 +530,12 @@ nav > span:hover{
 .vn-picture-box{
     background-color:white;
     box-shadow: 0 5px 12px -2px rgba(0, 0, 0, .5);
+}
+
+.flashback{
+    background-color: azure;
+    box-shadow: inset 0 5px 12px -2px rgba(0, 0, 0, .5);
+    padding: 10px;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
 }

@@ -1,8 +1,20 @@
 
 let heyCount = 0;
+let messageCount = 0;
 let actualCount = 0;
 let heyCountExists = false;
 let clicked = false;
+
+if(inventory.includes("Restricted Archives Key")||inventory.includes("Restricted Archives Key Fragment 3")){
+    $("#key-fragment-3").append("<p>You've already unlocked this key fragment!</p>")
+}else{
+    $("#key-fragment-3").append("<img src='/images/RestrictedArchivesKeyFragment3.gif' id='restricted-key-fragment-3'>")
+    $("#key-fragment-3").append("<p>You've unlocked a key fragment!</p>")
+    $("#key-fragment-3").one("click", function(){
+        $("#restricted-key-fragment-3").addClass("spiral-away");
+        saveToInventory("Restricted Archives Key Fragment 3")
+    })
+}
 
 let heyTrigger = function(){
     setTimeout(function(){
@@ -35,8 +47,59 @@ let heyTrigger = function(){
             $("#hey-count-number").text(heyCount)
         }
         if(heyCount==23){
+            $("#settings").css("display","none")
+            $("#key-fragment-3").css("display","flex")
             $("#song-details").html("<span id='Hey'>Hey! You won!</span>")
             $("#song-details").css("text-align","center");
+        }
+        messageCount++;
+        if(messageCount==1||messageCount==4){
+            $("#song-details").html("<p>Oh! Hi, you found the secret hidden rythym game! To play you just have to hit the test sound button at the approriate time.</p><p>Do note, this game tends to run best on chrome. Sorry firefox users!</p>")
+        }
+        if(messageCount==2){
+            $("#song-details").html("<p>Also just so you're aware, occasionally the page can become off-sync. You can check for that by whether or not the color changes match the heavy drum beat. My apologies for the jank, html/js isn't really the best langauge for precise timing.</p>")
+        }
+        if(messageCount==3){
+            $("#song-details").html("<p>There's a special prize for getting all 23 'Hey!'s in a perfect combo.</p>")
+        }
+        if(messageCount==4){
+            $("#song-details").html("<p>Good Luck! Have Fun!</p>")
+        }
+        if(messageCount==7&&heyCount==7){
+            $("#song-details").html("<p>We're about to get spicy! After this next 'Hey!' you're gonna be hitting the button every other beat. Hope you're ready!</p>")
+        }
+        if(messageCount==8&&heyCount==8){
+            $("#song-details").html("<p id='Hey'>HO!</p>")
+        }
+        if(messageCount==22&&heyCount==22){
+            $("#song-details").html("<p id='Hey' style='color: red;'>STOP!</p>")
+            setTimeout(function(){
+                if(heyCount==22){
+                    $("#song-details").html("<p>Alright, just one more, get ready...</p>")
+                }else{
+                    $("#song-details").html("<p>Oof, sorry about that. You're gonna have to refresh and try again.</p>")
+                }
+            },2000)
+            setTimeout(function(){
+                if(heyCount==22){
+                    $("#song-details").html("<p>Wait for it...!</p>")
+                }
+            },10000)
+            setTimeout(function(){
+                if(heyCount==22){
+                    $("#song-details").html("<p>3</p>")
+                }
+            },12500)
+            setTimeout(function(){
+                if(heyCount==22){
+                    $("#song-details").html("<p>2</p>")
+                }
+            },13000)
+            setTimeout(function(){
+                if(heyCount==22){
+                    $("#song-details").html("<p>1</p>")
+                }
+            },13500)
         }
         origHtml = $("#song-details").html();
         $("#song-details").html("<p id='Hey'>HEY!</p>")

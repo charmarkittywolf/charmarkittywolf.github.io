@@ -2,9 +2,39 @@ body{
     -webkit-user-select: none;
 }
 
+#key-fragment-3{
+    position:fixed;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    z-index:0;
+    display:none;
+    align-items:center;
+    flex-direction:column;
+    gap:15px;
+    font-family:"Jura";
+    text-align:center;
+}
+
+#restricted-key-fragment-3{
+    width:min(35vw, 220px);
+    min-width:120px;
+    filter:drop-shadow(0 0 8px rgba(0,227,255,.9)) drop-shadow(0 0 22px rgba(0,227,255,.95));
+    animation:fragment-shine 2.4s ease-in-out infinite;
+    cursor:pointer;
+    image-rendering:pixelated;
+}
+
+#restricted-key-fragment-3.spiral-away{
+    animation:spiral-away 1.25s cubic-bezier(.35,.05,.7,.8) forwards;
+    pointer-events:none;
+}
+
 #settings{
     font-family:"Orbitron";
-    text-align:center
+    text-align:center;
+    position:relative;
+    z-index:1;
 }
 
 .slider-form, #testSound{

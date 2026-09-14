@@ -539,3 +539,7 @@ nav > span:hover{
     padding-bottom: 5px;
     margin-bottom: 10px;
 }
+
+.subcategory{
+    font-weight:bold;
+}

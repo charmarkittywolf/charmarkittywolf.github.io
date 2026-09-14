@@ -28,7 +28,7 @@ let loadInventory = function(){
     }
     $("body").append("<div id='inventory-box'></div>")
     for(let x=0; x<inventory.length; x++){
-        $("#inventory-box").append(`<div class='inventory-item'><img id='${inventory[x].replaceAll(" ","-")}' style="max-width: 20vw; max-height: 20vh;"src="/images/${inventory[x].replaceAll(" ","")}.gif"><p style="text-align:center">${inventory[x]}</p></div>`)
+        $("#inventory-box").append(`<div class='inventory-item'><img draggable="true" id='${inventory[x].replaceAll(" ","-")}' style="max-width: 20vw; max-height: 20vh;"src="/images/${inventory[x].replaceAll(" ","")}.gif"><p style="text-align:center">${inventory[x]}</p></div>`)
     }
     $("#inventory-box").append(`<div id="close-inventory">Close Inventory</div>`)
     $("#inventory-box").on("click",function(){

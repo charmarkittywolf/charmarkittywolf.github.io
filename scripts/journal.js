@@ -419,3 +419,4 @@ $(".spoiler-button").on("click",function(){
     $(this).parent().height('auto');
     $(this).height('0px');
 })
+

@@ -2,16 +2,20 @@
 #title{
     font-family: "Orbitron";
     color: white;
-    text-shadow: 0px 0px 5px #03A9F4;   
     text-align: center;
     padding-top:5px;
+    letter-spacing: 0.06em;
+    background: linear-gradient(120deg, #ffffff 0%, #b9efff 30%, #ffd4f6 70%, #ffffff 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
 }
+
 #title-desc{
     margin-top: 50px;
     padding: 10px;
     margin-left: 25px;
     margin-right: 25px;
-    background-color: #1E2747;
+    background: linear-gradient(180deg, rgba(34, 45, 76, 1) 0%, rgba(17, 25, 43, 1) 100%);
     border: solid 1px white;
     border-radius: 10px;
     box-shadow: 0px 0px 5px #03A9F4;
@@ -22,6 +26,7 @@
     font-family: "Jura";
     text-shadow: 2px 2px 2px #000000;
     padding-bottom:5px;
+    color: rgba(255,255,255,0.96);
 }
 
 #description > p {
@@ -31,8 +36,7 @@
 #main-task{
     margin: 50px;
     padding: 10px;
-    padding-right:0px;
-    background-color: #1E2747;
+    background: linear-gradient(180deg, rgba(28, 43, 72, 1) 0%, rgba(19, 27, 45, 1) 100%);
     border: solid 1px white;
     border-radius: 10px;
     box-shadow: 0px 0px 5px #03A9F4;
@@ -53,10 +57,12 @@
     flex-direction:column;
 }
 
-#main-task-title{
+#main-task-title,
+#future-things-title,
+#final-task-title{
     font-family:"Orbitron";
     text-align:center;
-    text-shadow: 0px 0px 5px #03A9F4;
+    text-shadow: 0 0 12px rgba(3, 169, 244, 0.9), 0 0 22px rgba(255, 112, 219, 0.55);
 }
 
 .task-subtitle{
@@ -66,45 +72,43 @@
     transform: translate(-10px, -38px);
 }
 
-#future-things-title{
-    font-family:"Orbitron";
-    text-align:center;
-    text-shadow: 0px 0px 5px #03A9F4;
-}
-
 .task{
-    background-color: #005775;
-    border: solid white 2px;
+    background: linear-gradient(145deg, rgba(12, 86, 117, 1) 0%, rgba(7, 46, 72, 1) 100%);
+    border: solid 1px rgba(255,255,255,0.26);
     padding: 10px;
-    margin-top: 10px;
+    margin: 5px;
+    margin-top:10px;
     font-family:"Jura";
-    text-shadow: 2px 2px 2px #1E2747;
-    margin-right:10px;
+    text-shadow: 2px 2px 2px rgba(15, 25, 39, 0.9);
     width:500px;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.18), 0 10px 18px rgba(2, 8, 19, 0.22);
+    border-radius: 12px;
 }
 
 .task-title{
     font-family: 'Orbitron';
     text-align:center;
+    color: #eafcff;
 }
 
 #future-things{
-    background-color: #1E2747;
+    background: linear-gradient(180deg, rgba(30, 39, 71, 1) 0%, rgba(15, 23, 39, 1) 100%);
     border: solid 1px white;
     border-radius: 10px;
     box-shadow: 0px 0px 5px #03A9F4;
     padding: 10px;
-    padding-right:0px;
-    max-width: 1542px;
+    width:min(1552px, calc(100vw - 50px));
+    max-width: calc(100vw - 50px);
     margin-bottom:10px;
     margin-left:25px;
     margin-right:25px;
 }
 
-#task-grid{
+.task-grid{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    width:min(1530px, 100%);
 }
 
 .task-description{
@@ -146,32 +150,82 @@ main{
 }
 
 #the-final-task{
-    background-color: #f9e1f9;
-    border: solid 1px white;
-    border-radius: 10px;
-    box-shadow: 0px 0px 20px #d478ff;
+    background: linear-gradient(180deg, rgba(254, 240, 255, 1) 0%, rgba(247, 218, 248, 1) 100%);
+    border: solid 1px rgba(255,255,255,0.75);
+    border-radius: 14px;
+    box-shadow: 0 0 0 1px rgba(255,255,255,0.28), 0 0 22px rgba(212, 120, 255, 0.75), inset 0 0 18px rgba(255, 255, 255, 0.35);
     padding: 10px;
-    padding-right: 0px;
-    max-width: 1542px;
-    margin-bottom: 10px;
-    margin-left: 25px;
-    margin-right: 25px;
+    box-sizing:border-box;
+    max-width:550px;
+    margin: 10px;
     padding-top: 0px;
-    margin-top:10px;
 }
 
 #final-task{
-    background-color: #890080;
+    background: linear-gradient(180deg, rgba(117, 0, 104, 1) 0%, rgba(95, 0, 84, 1) 100%);
+    margin: 0px;
+    margin-top: 10px;
+    width:auto;
+    border: solid 1px rgba(255,255,255,0.5);
+    border-radius: 12px;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.16);
+}
+
+#cosplay-characters{
+    display:grid;
+    grid-template-columns:repeat(2, minmax(0, 1fr));
+    gap:15px;
+    width:100%;
+    max-width:100%;
+    margin:15px 0;
+    box-sizing:border-box;
+}
+
+#cosplay-characters figure{
+    min-width:0;
+    margin:0;
+    text-align:center;
+    background: rgba(255,255,255,0.08);
+    border-radius: 12px;
+    border: 1px solid rgba(255,255,255,0.18);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.18);
+    padding:10px;
+}
+
+#cosplay-characters figure:nth-child(3){
+    grid-column:1 / -1;
+    justify-self:center;
+    width:50%;
+}
+
+#cosplay-characters img{
+    display:block;
+    width:100%;
+    max-width:100%;
+    height:clamp(140px, 25vw, 220px);
+    object-fit:contain;
+    border-radius: 10px;
+}
+
+#cosplay-characters figcaption{
+    margin-top:5px;
+    color: #fff1fb;
+    text-shadow: 0 0 8px rgba(255, 154, 220, 0.6);
 }
 
 #final-task-container{
-    background: radial-gradient(rgb(185 80 155) 50%, rgba(246, 42, 147, 1) 100%);
-    border: solid 1px white;
-    border-radius: 10px;
-    box-shadow: 0px 0px 5px #03A9F4;
-    padding: 10px;
-    padding-right: 0px;
-    max-width: 1542px;
+    background: linear-gradient(135deg, rgba(187, 92, 170, 1) 0%, rgba(255, 97, 155, 1) 48%, rgba(97, 86, 210, 1) 100%);
+    border: solid 3px rgba(255,255,255,0.85);
+    border-radius: 14px;
+    box-shadow: 0 0 0 1px rgba(255,255,255,0.2), 0 0 18px rgba(255, 127, 233, 0.4), inset 0 0 24px rgba(255,255,255,0.18);
+    padding-top: 10px;
+    padding-bottom:10px;
+    box-sizing:border-box;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    width:min(1552px, calc(100vw - 50px));
+    max-width:calc(100vw - 50px);
     margin-bottom: 10px;
     margin-left: 25px;
     margin-right: 25px;
@@ -180,8 +234,61 @@ main{
 #final-task-title{
     font-family: "Orbitron";
     text-align: center;
-    text-shadow: 0px 0px 5px #ef00ff;
+    color: white;
 }
+
+@media (max-width:1100px){
+    #final-task-container{
+        width:min(542px, calc(100vw - 50px));
+    }
+
+    #future-things{
+        width:min(542px, calc(100vw - 50px));
+    }
+
+    .task-grid{
+        width:min(520px, 100%);
+    }
+}
+
+#final-task-container:has(#sub-tasks > .task:only-child){
+    width:min(542px, calc(100vw - 50px));
+}
+
+#final-task-container:has(#sub-tasks > .task:nth-child(2)):not(:has(#sub-tasks > .task:nth-child(3))){
+    width:min(1042px, calc(100vw - 50px));
+}
+
+#final-task-container:not(:has(.task-grid)){
+    width:min(542px, calc(100vw - 50px));
+}
+
+#sub-tasks:has(> .task:only-child){
+    width:min(520px, 100%);
+}
+
+#sub-tasks:has(> .task:nth-child(2)):not(:has(> .task:nth-child(3))){
+    width:min(1020px, 100%);
+}
+
+#future-things:has(.task-grid > .task:nth-child(2)):not(:has(.task-grid > .task:nth-child(3))){
+    width:min(1042px, calc(100vw - 50px));
+}
+
+#future-things:has(.task-grid > .task:nth-child(2)):not(:has(.task-grid > .task:nth-child(3))) .task-grid{
+    width:min(1020px, 100%);
+}
+
+@media (max-width:1100px){
+    #final-task-container:has(#sub-tasks > .task:nth-child(2)):not(:has(#sub-tasks > .task:nth-child(3))){
+        width:min(542px, calc(100vw - 50px));
+    }
+
+    #sub-tasks:has(> .task:nth-child(2)):not(:has(> .task:nth-child(3))){
+        width:min(520px, 100%);
+    }
+}
+
 
 .completed-task{
     width:250px;
@@ -208,8 +315,7 @@ a:hover{
     border-radius: 10px;
     box-shadow: 0px 0px 5px #03A9F4;
     padding: 10px;
-    padding-right: 0px;
-    max-width: 1542px;
+    max-width: calc(100vw - 50px);
     margin-bottom: 10px;
     margin-left: 25px;
     margin-right: 25px;
@@ -220,7 +326,6 @@ a:hover{
     font-family: "Orbitron";
     text-align: center;
     text-shadow: 0px 0px 5px #03A9F4;
-    margin-right:10px;
 }
 
 .journal-link-t{
@@ -237,4 +342,19 @@ a:hover{
     flex-direction:row;
     flex-wrap: wrap;
     justify-content: center;
+}
+
+@media (min-width:1101px) and (max-width:1600px){
+    #final-task-container,
+    #future-things{
+        width:min(1042px, calc(100vw - 50px));
+    }
+
+    .task-grid{
+        width:min(1020px, 100%);
+    }
+}
+
+.sub-task{
+    background: linear-gradient(180deg, rgba(117, 0, 104, 1) 0%, rgba(95, 0, 84, 1) 100%);
 }

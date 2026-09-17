@@ -426,7 +426,6 @@ a#splash-page:link{
     top: 0;
     z-index: 10;
     background: linear-gradient(180deg, rgba(12, 17, 20, 0.98), rgba(0, 0, 0, 0.96));
-    border: solid var(--key-blue-soft) 2px;
     border-radius: 14px 0 0 14px;
     margin: 5px;
     color:white;
@@ -443,7 +442,6 @@ a#splash-page:link{
     transform: translate(-23px, 50vh);
     color: white;
     background-color: black;
-    border: solid var(--key-blue-soft) 2px;
     text-align: center;
     justify-content: center;
     align-items: center;

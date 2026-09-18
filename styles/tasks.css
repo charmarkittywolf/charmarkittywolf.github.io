@@ -351,9 +351,6 @@ a:hover{
     display:block;
     text-align:center;
 }
-.journal-link-t:link{
-    color:#ffa1a1;
-}
 
 #completed-tasks-container{
     display:flex;

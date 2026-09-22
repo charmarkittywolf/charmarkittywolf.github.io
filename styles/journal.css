@@ -535,3 +535,14 @@ nav > span:hover{
 .subcategory{
     font-weight:bold;
 }
+
+.terraria > img{
+    aspect-ratio: auto;
+}
+
+.terraria-background{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}

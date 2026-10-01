@@ -546,3 +546,8 @@ nav > span:hover{
     background-position: center;
     background-attachment: fixed;
 }
+
+.tiled-background{
+    background-size: auto;
+    background-repeat: repeat;
+}

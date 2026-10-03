@@ -3,6 +3,7 @@ body{
     background-image: url(../images/ScribblesWhite.png);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position:center;
 }
 
 #entry, nav, #table-of-contents{

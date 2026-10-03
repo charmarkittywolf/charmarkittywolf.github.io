@@ -1,7 +1,6 @@
 let sillyQuotes = [
     "Did you know you can kinda just do whatever you want? It's fucked up.",
     "Bloop!",
-    "Fiction can change the world!",
     "The Artist Formerly Known as Phoenix Steve",
     "Everything ends, but I've got 60% left.",
     "Battle Damaged Purgatory Hell-World Princess",

@@ -1,0 +1,51 @@
+body{
+    background: black;
+    background-image: url(../images/ScribblesWhite.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#entry, nav, #table-of-contents{
+    box-shadow: 0px 0px 10px 0px deeppink;
+    border: solid 3px deeppink;
+    background: black;
+    color: white;
+}
+
+#entry a,
+#entry a:visited,
+#entry a:hover,
+#entry a:active,
+nav a,
+nav a:visited,
+nav a:hover,
+nav a:active,
+#table-of-contents a,
+#table-of-contents a:visited,
+#table-of-contents a:hover,
+#table-of-contents a:active {
+    color: deeppink;
+}
+
+.table-category, #archives{
+    background-color:black;
+}
+
+#splash-page{
+    color: deeppink;
+    text-shadow: 0px 0px 2px black;
+}
+
+#show-toc{
+    font-family:Architects Daughter;
+    color:white;
+}
+
+#hide-toc, #show-toc{
+    font-weight:100;
+    text-align:center;
+}
+#hide-toc:hover, #show-toc:hover{
+    color: orange;
+    cursor:pointer;
+}

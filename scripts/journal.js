@@ -420,3 +420,11 @@ $(".spoiler-button").on("click",function(){
     $(this).height('0px');
 })
 
+$("#hide-toc").on("click",function(){
+    $("#table-of-contents").css("display","none");
+    $("body").prepend("<h3 id='show-toc'>Show Table Of Contents</h3>")
+    $("#show-toc").on("click",function(){
+        $("#table-of-contents").css("display","block");
+        $(this).remove();
+    })
+})

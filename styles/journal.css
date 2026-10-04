@@ -73,6 +73,31 @@ img{
     min-width: 50%;
 }
 
+@media (max-width: 700px){
+    #table-of-contents,
+    #main-task,
+    #main-task-bonus,
+    #future-things,
+    #final-task-container,
+    #completed-tasks,
+    #the-final-task,
+    .task-grid,
+    #sub-tasks,
+    #completed-tasks-container,
+    .completed-task,
+    #final-task{
+        width: auto !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+        box-sizing: border-box !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+    #sub-tasks > .sub-task, #the-final-task, .task{
+        width: 90% !important;
+    }
+}
+
 .entry-date{
     padding-left:15px;
 }
@@ -259,6 +284,38 @@ a:visited {
     width: min-content;
     align-self: center;
     margin:20px;
+}
+
+@media (max-width: 600px){
+    #main-task,
+    #main-task-bonus,
+    #future-things,
+    #final-task-container,
+    #completed-tasks{
+        width: calc(100vw - 30px);
+        max-width: calc(100vw - 30px);
+        margin-left: 15px;
+        margin-right: 15px;
+        box-sizing: border-box;
+    }
+
+    .task-grid,
+    #sub-tasks,
+    #completed-tasks-container{
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .task,
+    .completed-task,
+    #final-task,
+    .sub-task{
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        overflow-wrap: anywhere;
+        word-break: break-word;
+    }
 }
 
 .discord-box{

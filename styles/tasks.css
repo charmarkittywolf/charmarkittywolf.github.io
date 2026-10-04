@@ -269,6 +269,85 @@ main{
     }
 }
 
+@media (max-width: 700px){
+    #entry,
+    #main-task,
+    #main-task-bonus,
+    #future-things,
+    #final-task-container,
+    #completed-tasks,
+    #the-final-task,
+    .task-grid,
+    #sub-tasks,
+    #completed-tasks-container{
+        width: calc(100vw - 32px) !important;
+        max-width: calc(100vw - 32px) !important;
+        box-sizing: border-box !important;
+    }
+
+    #main-task,
+    #final-task-container,
+    #future-things,
+    #completed-tasks{
+        margin-left: 16px !important;
+        margin-right: 16px !important;
+    }
+
+    #future-things,
+    #completed-tasks{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+    }
+
+    #future-things .task-grid,
+    #completed-tasks-container{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+        align-items:stretch;
+        width:100% !important;
+        max-width:100% !important;
+    }
+
+    .task,
+    .sub-task,
+    .completed-task,
+    #final-task,
+    #the-final-task,
+    #main-task > .task,
+    #completed-tasks-container > .task,
+    #future-things .task-grid > .task,
+    #completed-tasks .task{
+        width: min(100%, 500px) !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+        box-sizing: border-box !important;
+        overflow-wrap: anywhere;
+        word-break: break-word;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    #sub-tasks > .task{
+        width: calc(100% - 12px) !important;
+        max-width: 500px !important;
+        min-width: 0 !important;
+        margin: 5px auto !important;
+        box-sizing: border-box !important;
+        overflow-wrap: anywhere;
+        word-break: break-word;
+    }
+
+    .task p,
+    .task h3,
+    .task-title,
+    .task-description{
+        overflow-wrap: anywhere;
+        word-break: break-word;
+    }
+}
+
 #final-task-container:has(#sub-tasks > .task:only-child){
     width:min(542px, calc(100vw - 50px));
 }

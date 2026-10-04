@@ -15,17 +15,18 @@ body{
 
 #entry a,
 #entry a:visited,
-#entry a:hover,
 #entry a:active,
 nav a,
 nav a:visited,
-nav a:hover,
 nav a:active,
 #table-of-contents a,
 #table-of-contents a:visited,
-#table-of-contents a:hover,
 #table-of-contents a:active {
     color: deeppink;
+}
+
+#entry a:hover, nav a:hover,#table-of-contents a:hover{
+    color:orange;
 }
 
 .table-category, #archives{

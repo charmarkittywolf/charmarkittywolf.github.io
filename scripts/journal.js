@@ -139,9 +139,8 @@ let turnOffClickSteves = function(element){
 }
 
 $(".table-category").on("click",function(){
-    turnOnClick($(this),"p");
+    turnOnClick($(this),"p, .spoiler-box");
 })
-
 $("#archives").on("click",function(){
     turnOnClickArchives($(this))
 })
@@ -203,6 +202,8 @@ $(".locked-spoiler").on("drop",function(event){
     event.preventDefault();
     $(this).removeClass("unlock-hover locked-spoiler");
     $(this).click();
+    $("#wantmaster").css("height", "auto");
+    $(this).css("overflow","hidden");
 })
 
 $(".extra-locked-spoiler").on("drop",function(event){

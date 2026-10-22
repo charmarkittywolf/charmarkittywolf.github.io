@@ -338,8 +338,20 @@ a:visited {
     overflow: hidden;
     transition: 3000ms;
 }
-.spoiler-box >p{
+.spoiler-box > p{
+    margin: 0;
     padding: 15px;
+    padding-top: 7.5px;
+    padding-bottom: 7.5px;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 1000ms ease, opacity 500ms ease, padding 300ms ease;
+}
+.spoiler-box.expanded > p,
+#wantmaster {
+    max-height: 80px;
+    opacity: 1;
     padding-top: 7.5px;
     padding-bottom: 7.5px;
 }
@@ -361,6 +373,15 @@ a:visited {
 }
 .spoiler-button >p:hover{
     cursor:pointer;
+}
+
+#wantmaster {
+    display: block;
+    text-align: center;
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 1000ms ease, opacity 500ms ease, height 1000ms ease;
 }
 
 .discord-box > p{

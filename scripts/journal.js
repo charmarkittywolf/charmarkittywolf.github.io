@@ -417,7 +417,9 @@ $(".spoiler-button").on("click",function(){
         });
         return;
     }
-    $(this).parent().height('auto');
+    let spoilerBox = $(this).parent();
+    spoilerBox.addClass("expanded");
+    spoilerBox.height('auto');
     $(this).height('0px');
 })
 
